@@ -1,12 +1,12 @@
 //=============『 Utama 』================== //
-global.owner = ['6287892711054'] 
+global.owner = ['6285713041886'] 
 global.mods = [] 
 global.prems = [] 
 
 //=============『 Info Owner 』============== //
-global.nameowner = 'Hyzer Official'
-global.numberowner = '6287892711054'
-global.instagram = 'https://instagram.com/hyzer_stfu'
+global.nameowner = 'Fachri'
+global.numberowner = '6285713041886'
+global.instagram = 'https://instagram.com/sfdesign_id'
 global.github = 'https://github.com/Hyzerr'
 global.dana = '087892711054'
 global.pulsa = '085212023766'
