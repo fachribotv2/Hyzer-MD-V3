@@ -22,27 +22,28 @@ let moment = require('moment-timezone')
 //━━━━━━━━[ DEFAULT MENU ]━━━━━━━━//
 const defaultMenu = {
   before:`
-┌─「 *${global.namebot}* 」
-├ Hai, %name!
-├ Tersisa *%limit Limit*
-├ Role *%role*
-├ Level *%level (%exp / %maxexp)*
-├ [%xp4levelup]
-├ %totalexp XP secara Total
-│ 
-├ Tanggal: *%week %weton, %date*
-├ Tanggal Islam: *%dateIslamic*
-├ Waktu: *%time*
-│
-├ Uptime: *%uptime (%muptime)*
-├ Database: %rtotalreg dari %totalreg
-├ Memory Used : *${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB*
-└────
+❏════〈 *${global.namebot}* 
+‖✾ Hai, %name!
+‖✾ Tersisa *%limit Limit*
+‖✾ Role *%role*
+‖✾ Level *%level (%exp / %maxexp)*
+‖✾ [%xp4levelup]
+‖✾ %totalexp XP secara Total
+‖ 
+‖✾ Tanggal: *%week %weton, %date*
+‖✾ Tanggal Islam: *%dateIslamic*
+‖✾ Waktu: *%time*
+‖
+‖✾ Uptime: *%uptime (%muptime)*
+‖✾ Database: %rtotalreg dari %totalreg
+‖✾ Memory Used : *${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB*
+❏══════
 %readmore`.trimStart(), 
-  header: '┌─「 %category 」',
-  body: '├ %cmd %islimit %isPremium',
-  footer: '└────\n', 
-  after: ``,
+  header: '❏––––––『 %category 』––––––',
+  body: '┊✦ %cmd %islimit %isPremium',
+  footer: '┗━═┅═━––––––๑\n', 
+  after: `⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕
+             © 𝙁𝙖𝙘𝙝𝙧𝙞𝘽𝙤𝙩-𝙈𝘿`,
 }
 
 //━━━━━━━━[ CATEGORY ]━━━━━━━━//
@@ -304,7 +305,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
             description: menuu,
             buttonText: 'LIST MENU',
             listType: 1,
-            footerText: "𝚂𝙸𝙻𝙰𝙷𝙺𝙰𝙽 𝙿𝙸𝙻𝙸𝙷 𝙼𝙴𝙽𝚄 𝙳𝙸 𝙱𝙰𝚆𝙰𝙷",
+            footerText: "                  「 𝙁𝙖𝙘𝙝𝙧𝙞𝘽𝙤𝙩-𝙈𝘿 あ⁩ 」",
             mtype: 'listMessage',
             sections: [
               {
