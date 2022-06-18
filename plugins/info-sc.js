@@ -12,10 +12,10 @@ let esce = `
 Hai ${ye} Lagi Nyari Sc Ya? 
 
 Nih Link Sc Nya Dibawah :
-https://youtu.be/AXPzjQ5jxx8
+wa.me/6285713041886
 
 _*Jangan Lupa Di Subscribe*_`
-conn.sendBut(m.chat, esce, wm3, 'Thanks', 'thanks', m) 
+conn.sendBut(m.chat, esce, wm3, 'Oke', 'thanks', m) 
 }
 handler.help = ['sc', 'sourcecode']
 handler.tags = ['info']
