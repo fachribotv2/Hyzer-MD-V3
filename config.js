@@ -13,14 +13,14 @@ global.pulsa = '08159917553'
 global.gopay = '-'
 
 //=============『 Info Bot 』=================//
-global.namebot = 'FachriBot-Md'
+global.namebot = '𝙁𝘼𝘾𝙃𝙍𝙄𝘽𝙊𝙏-𝙈𝘿'
 global.gc = 'https://chat.whatsapp.com/GimZmhA2XTQFfPXk4XMrv6'
 global.web = 'https://ipulpachri.github.io/docs' //ubah jadi website lu, bisa link ig, link github, link yt, klo link gc ntr beda tampilan lagi. 
 global.price1 = '1 bulan = 10.000\n2 Minggu 7.000\n1 Minggu 5.000'
 
 //=======『 Tampilan Dan Lainnya 』============//
 global.fotonya1 = 'https://telegra.ph/file/f7e64dbc9c546f55c91b2.jpg' //ganti jadi foto bot mu
-global.fotonya2 = 'https://telegra.ph/file/8c471d45b6cedad43cf84.jpg' //ini juga ganti 
+global.fotonya2 = 'https://telegra.ph/file/df3c051978c73fe32ef3d.jpg' //ini juga ganti 
 global.lolkey = 'Papah-Chan' //biar mudah ngegantinya semisal apikeynya expired:v
 global.zenzkey = 'BagasPrdn' //ganti jadi apikey lu kalau expired
 global.wm = '𝙁𝘼𝘾𝙃𝙍𝙄𝘽𝙊𝙏-MDོ'
