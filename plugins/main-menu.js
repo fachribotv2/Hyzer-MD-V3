@@ -186,8 +186,6 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 
     let waofc = `@${'0'.split('@')[0]}`
 
- m, { contextInfo: { mentionedJid: conn.parseMention(tag) }}
-
 //━━━━━━━━[ DATABASE USER ]━━━━━━━━//
   try {
     let package = JSON.parse(await fs.promises.readFile(path.join(__dirname, '../package.json')).catch(_ => '{}'))
