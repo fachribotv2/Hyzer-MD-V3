@@ -612,16 +612,16 @@ function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
   res = "Selamat DiniHari"
   if (time >= 4) {
-    res = "Selamat Pagi"
+    res = "Selamat Pagi kak"
   }
   if (time > 10) {
-    res = "Selamat Siang"
+    res = "Selamat Siang kak"
   }
   if (time >= 15) {
-    res = "Selamat Sore"
+    res = "Selamat Sore kak"
   }
   if (time >= 18) {
-    res = "Selamat Malam"
+    res = "Selamat Malam kak"
   }
   return res
 }
