@@ -22,8 +22,8 @@ let moment = require('moment-timezone')
 //━━━━━━━━[ DEFAULT MENU ]━━━━━━━━//
 const defaultMenu = {
   before:`
-❏════〈 *${global.namebot}* 
-‖ ✾ Hai, %name!
+❏═══━┅⬣〈 *${global.namebot}* 
+‖ ✾ Hai kak, %name!
 ‖ ✾ Tersisa *%limit Limit*
 ‖ ✾ Role *%role*
 ‖ ✾ Level *%level (%exp / %maxexp)*
@@ -37,13 +37,15 @@ const defaultMenu = {
 ‖ ✾ Uptime: *%uptime (%muptime)*
 ‖ ✾ Database: %rtotalreg dari %totalreg
 ‖ ✾ Memory Used : *${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB*
-❏══════
+❏═════━┅⬣
 %readmore`.trimStart(), 
   header: '❏––––––『 %category 』––––––',
   body: '┊✦ %cmd %islimit %isPremium',
   footer: '┗━═┅═━––––––๑\n', 
-  after: `⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕
-            © 𝙁𝙖𝙘𝙝𝙧𝙞𝘽𝙤𝙩-𝙈𝘿`,
+  after: `⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❘❚❙❘❙❙❘❚❙❘❙❙❘❘❙❚❙❘❙❚❙❘❙❘❙❚❙ ⌕
+     *々› %me*
+ Powered By *%waofc*
+`,
 }
 
 //━━━━━━━━[ CATEGORY ]━━━━━━━━//
@@ -175,6 +177,16 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   if (teks == 'photooxy') tags = {
   'photooxy': 'PHOTO OXY MENU', 
   }
+
+//━━━━━━━━[ TAGS ]━━━━━━━━//
+
+	let tag = `@${m.sender.split('@')[0]}`
+
+ m, { contextInfo: { mentionedJid: conn.parseMention(tag) }}
+
+    let waofc = `@${'0'.split('@')[0]}`
+
+ m, { contextInfo: { mentionedJid: conn.parseMention(tag) }}
 
 //━━━━━━━━[ DATABASE USER ]━━━━━━━━//
   try {
@@ -612,16 +624,16 @@ function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
   res = "Selamat DiniHari"
   if (time >= 4) {
-    res = "Selamat Pagi kak"
+    res = "Selamat Pagi kak,"
   }
   if (time > 10) {
-    res = "Selamat Siang kak"
+    res = "Selamat Siang kak,"
   }
   if (time >= 15) {
-    res = "Selamat Sore kak"
+    res = "Selamat Sore kak,"
   }
   if (time >= 18) {
-    res = "Selamat Malam kak"
+    res = "Selamat Malam kak,"
   }
   return res
 }
