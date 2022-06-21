@@ -444,9 +444,29 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "title": "│💨│PHOTO OXY",
                   "description": "Menampilkan Photo Oxy Menu",
                   "rowId": `${_p}? textpro`
+                }],
+                "title": "LIST MENU FACHRIBOT"
+              }, {
+                "rows": [{
+                  "title": "💰 DONASI",
+                  "description": "Donasi bg jgn make doang..",
+                  "rowId": `.donasi`
+                }, {
+                  "title": "🎀 SEWA BOT",
+                  "description": "Sewa dan masuk an ke grup kalian",
+                  "rowId": `.sewabot`
+                }, {
+                  "title": "│💨│PHOTO OXY",
+                  "description": "Menampilkan Photo Oxy Menu",
+                  "rowId": `${_p}? textpro`
+                  "rowId": `.sc`
+                },{
+                  "title": "👑 CONTRIBUTION",
+                  "description": "Terimakasih kpd yg membantu pembuatan FachriBot",
+                  "rowId": `.tqto`
                 }
                   ],
-                "title": "LIST MENU FACHRIBOT"
+                "title": "KATA PENUTUP"
               }
             ], "contextInfo": {
               "stanzaId": m.key.id,
