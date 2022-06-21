@@ -321,14 +321,6 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "title": "⌛ RUNTIME BOT",
                   "description": "Bot Aktif Selama...",
                   "rowId": `.runtime`
-                },{
-                  "title": "✒️ SOURCE CODE",
-                  "description": "Sc yg di pakai FachriBot",
-                  "rowId": `.sc`
-                },{
-                  "title": "👑 CONTRIBUTION",
-                  "description": "Terimakasih kpd yg membantu pembuatan FachriBot",
-                  "rowId": `.tqto`
                 }],
                 "title": "INFORMASI BOT"
               }, {
@@ -456,9 +448,8 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "description": "Sewa dan masuk an ke grup kalian",
                   "rowId": `.sewabot`
                 }, {
-                  "title": "│💨│PHOTO OXY",
-                  "description": "Menampilkan Photo Oxy Menu",
-                  "rowId": `${_p}? textpro`
+                  "title": "✒️ SOURCE CODE",
+                  "description": "Sc yg di pakai FachriBot",
                   "rowId": `.sc`
                 },{
                   "title": "👑 CONTRIBUTION",
