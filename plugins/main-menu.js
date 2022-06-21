@@ -44,21 +44,12 @@ const defaultMenu = {
   footer: '┗━═┅═━––––––๑\n', 
   after: `⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❘❚❙❘❙❙❘❚❙❘❙❙❘❘❙❚❙❘❙❚❙❘❙❘❙❚❙ ⌕
      *々› %me*
- Powered By *%waofc*
 `,
 }
 
-//━━━━━━━━[ CATEGORY&TAGS ]━━━━━━━━//
+//━━━━━━━━[ CATEGORY ]━━━━━━━━//
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 
-//tags
-	let tag = `@${m.sender.split('@')[0]}`
-
- m, { contextInfo: { mentionedJid: conn.parseMention(tag) }}
-
-    let waofc = `@${'0'.split('@')[0]}`
-
-//category
   let tags
   let teks = `${args[0]}`.toLowerCase()
   let arrayMenu = ['all', 'absen', 'rpg', 'anime', 'downloader', 'game', 'fun', 'xp', 'github', 'group', 'image', 'quotes', 'admin', 'info', 'internet', 'islam', 'kerang', 'maker', 'owner', 'suara', 'premium', 'quotes', 'info', 'stalk', 'shortlink', 'sticker', 'tools', 'text', 'nsfw', 'asupan', 'random', 'textpro', 'photooxy']
