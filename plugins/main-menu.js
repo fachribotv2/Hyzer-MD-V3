@@ -48,8 +48,17 @@ const defaultMenu = {
 `,
 }
 
-//━━━━━━━━[ CATEGORY ]━━━━━━━━//
+//━━━━━━━━[ CATEGORY&TAGS ]━━━━━━━━//
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
+
+//tags
+	let tag = `@${m.sender.split('@')[0]}`
+
+ m, { contextInfo: { mentionedJid: conn.parseMention(tag) }}
+
+    let waofc = `@${'0'.split('@')[0]}`
+
+//category
   let tags
   let teks = `${args[0]}`.toLowerCase()
   let arrayMenu = ['all', 'absen', 'rpg', 'anime', 'downloader', 'game', 'fun', 'xp', 'github', 'group', 'image', 'quotes', 'admin', 'info', 'internet', 'islam', 'kerang', 'maker', 'owner', 'suara', 'premium', 'quotes', 'info', 'stalk', 'shortlink', 'sticker', 'tools', 'text', 'nsfw', 'asupan', 'random', 'textpro', 'photooxy']
@@ -177,14 +186,6 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   if (teks == 'photooxy') tags = {
   'photooxy': 'PHOTO OXY MENU', 
   }
-
-//━━━━━━━━[ TAGS ]━━━━━━━━//
-
-	let tag = `@${m.sender.split('@')[0]}`
-
- m, { contextInfo: { mentionedJid: conn.parseMention(tag) }}
-
-    let waofc = `@${'0'.split('@')[0]}`
 
 //━━━━━━━━[ DATABASE USER ]━━━━━━━━//
   try {
