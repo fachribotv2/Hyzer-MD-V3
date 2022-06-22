@@ -11,7 +11,7 @@ let handler = async (m, {conn}) => {
 let anu = `${ucapan()}
 Halo👋
 Ada Yang Bisa Saya Bantu?
-Ketik .menu Untuk Memulai Bot
+Ketik #menu Untuk Memulai Bot
 
 Runtime: ${uptime}`
    const ftroli = {
@@ -25,7 +25,7 @@ Runtime: ${uptime}`
     status: 1,
     surface : 1,
     message: `2022 © ${namebot}, 
-    orderTitle: `Hyzer`,
+    orderTitle: `Fachri`,
     thumbnail: 'https://telegra.ph/file/5ecbec3e82e247671a18e.jpg', 
     sellerJid: '0@s.whatsapp.net' 
     }
