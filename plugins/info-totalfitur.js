@@ -1,6 +1,7 @@
 
 let handler = async (m, { conn }) => {
 let totalf = Object.values(global.plugins).filter(
+
 let ye = `@${m.sender.split`@`[0]}`
     (v) => v.help && v.tags
   ).length;
