@@ -757,10 +757,14 @@ global.dfail = (type, m, conn) => {
         restrict: 'Fitur ini di *disable*!'
     }[type]
     if (msg) return m.reply(msg)
-  let unreg = {
-    unreg: `Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Fachri.15*`
-  }[type]
-  if (unreg) return conn.sendButton(m.chat, `Haii Kak, ${name} 👋 Sebelum menggunakan bot ini Harap *Register* Terlebih dahulu ya kak`, watermark, 'Register', `#daftar ${name}.15`, { key: { fromMe: false, remoteJid: 'status@broadcast', participant: '0@s.whatsapp.net' }, message: { orderMessage: { message: `© Created By Fachri_\nJam ${time}`, itemCount: 2022, thumbnail: fs.readFileSync('./d11e20d44501e1a59439b5344e07f5d7.jpg')}}})
+      let msgg = {
+    	unreg: 'Halo kak ! 👋\nAnda belum terdaftar didalam Database BOT 🗂️\nPencet Tombol dibawah Untuk Mendaftar Ke Database 𝙁𝙖𝙘𝙝𝙧𝙞𝘽𝙤𝙩-𝙈𝘿'
+}[type]
+if (msgg) return conn.sendHydrated(m.chat, msgg, global.wm, null, global.gc, '🌎 Group Official', `${m.sender.split`@`[0]}`, 'User', [
+      ['Verify', '#daftar.undenfied.14'],
+      [null,null],
+      [null, null]
+    ], m)
 }
 
 let fs = require('fs')
