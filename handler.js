@@ -754,17 +754,10 @@ global.dfail = (type, m, conn) => {
         private: 'Perintah ini hanya dapat digunakan di Chat Pribadi!',
         admin: 'Perintah ini hanya untuk *Admin* grup!',
         botAdmin: 'Jadikan bot sebagai *Admin* untuk menggunakan perintah ini!',
+        unreg: 'Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Manusia.16*',
         restrict: 'Fitur ini di *disable*!'
     }[type]
     if (msg) return m.reply(msg)
-      let msgg = {
-    	unreg: 'Halo kak ! 👋\nAnda belum terdaftar didalam Database BOT 🗂️\nPencet Tombol dibawah Untuk Mendaftar Ke Database 𝙁𝙖𝙘𝙝𝙧𝙞𝘽𝙤𝙩-𝙈𝘿'
-}[type]
-if (msgg) return conn.sendHydrated(m.chat, msgg, global.wm, null, global.gc, '🌎 Group Official', `${m.sender.split`@`[0]}`, 'User', [
-      ['Verify', '#daftar.undenfied.14'],
-      [null,null],
-      [null, null]
-    ], m)
 }
 
 let fs = require('fs')
