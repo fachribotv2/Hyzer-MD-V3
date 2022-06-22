@@ -1,17 +1,19 @@
 
 let handler = async (m, { conn }) => {
 let totalf = Object.values(global.plugins).filter(
-
+    (v) => v.help && v.tags
+  ).length;
 let ye = `@${m.sender.split`@`[0]}`
     (v) => v.help && v.tags
   ).length;
 let esce = `
 Hai ${ye}, 
-Total Fitur saat ini: ${totalf}
+Total Fitur saat ini: ${totalf}`
 conn.sendBut(m.chat, esce, wm3, 'Owner', '.owner', m) 
 }
 handler.help = ['totalfitur']
 handler.tags = ['info']
 handler.command = ['totalfitur']
+
 module.exports = handler
 
