@@ -9,8 +9,8 @@ contextInfo: { externalAdReply :{
                         mediaType: 2,
                         description: 'anu',
                         title: bottime,
-                        body: 'Total Cintaku Padamu',          previewType: 0,
-                        thumbnail: fs.readFileSync("./thumbnail.jpg"),
+                        body: 'Total Cintaku Padamu ><',          previewType: 0,
+                        thumbnail: fs.readFileSync("./d11e20d44501e1a59439b5344e07f5d7.jpg"),
                         sourceUrl: instagram
                       }}
 })
