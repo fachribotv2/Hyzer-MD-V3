@@ -19,6 +19,7 @@ global.web = 'https://ipulpachri.github.io/docs' //ubah jadi website lu, bisa li
 global.price1 = '1 bulan = 10.000\n2 Minggu 7.000\n1 Minggu 5.000'
 
 //=======『 Tampilan Dan Lainnya 』============//
+global.giflogo = 'https://telegra.ph/file/a46ab7fa39338b1f54d5a.mp4'
 global.fotonya1 = 'https://telegra.ph/file/f7e64dbc9c546f55c91b2.jpg' //ganti jadi foto bot mu
 global.fotonya2 = 'https://telegra.ph/file/222a38f36a555c649dda6.jpg' //ini juga ganti 
 global.lolkey = 'Papah-Chan' //biar mudah ngegantinya semisal apikeynya expired:v
