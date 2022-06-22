@@ -4,8 +4,6 @@ let totalf = Object.values(global.plugins).filter(
     (v) => v.help && v.tags
   ).length;
 let ye = `@${m.sender.split`@`[0]}`
-    (v) => v.help && v.tags
-  ).length;
 let esce = `
 Hai ${ye}, 
 Total Fitur saat ini: ${totalf}`
