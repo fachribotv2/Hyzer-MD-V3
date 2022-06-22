@@ -754,10 +754,13 @@ global.dfail = (type, m, conn) => {
         private: 'Perintah ini hanya dapat digunakan di Chat Pribadi!',
         admin: 'Perintah ini hanya untuk *Admin* grup!',
         botAdmin: 'Jadikan bot sebagai *Admin* untuk menggunakan perintah ini!',
-        unreg: 'Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Manusia.16*',
         restrict: 'Fitur ini di *disable*!'
     }[type]
     if (msg) return m.reply(msg)
+  let unreg = {
+    unreg: `Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Fachri.15*`
+  }[type]
+  if (unreg) return conn.sendButton(m.chat, `Haii Kak, ${name} 👋 Sebelum menggunakan bot ini Harap *Register* Terlebih dahulu ya kak`, watermark, 'Register', `#daftar ${name}.15`, { key: { fromMe: false, remoteJid: 'status@broadcast', participant: '0@s.whatsapp.net' }, message: { orderMessage: { message: `© Created By Fachri_\nJam ${time}`, itemCount: 2022, thumbnail: fs.readFileSync('./d11e20d44501e1a59439b5344e07f5d7.jpg')}}})
 }
 
 let fs = require('fs')
