@@ -23,6 +23,8 @@ global.fotonya1 = 'https://telegra.ph/file/f7e64dbc9c546f55c91b2.jpg' //ganti ja
 global.fotonya2 = 'https://telegra.ph/file/222a38f36a555c649dda6.jpg' //ini juga ganti 
 global.lolkey = 'Papah-Chan' //biar mudah ngegantinya semisal apikeynya expired:v
 global.zenzkey = 'BagasPrdn' //ganti jadi apikey lu kalau expired
+global.botdate = `⫹⫺ 𝗗𝗮𝘁𝗲: ${week} ${date}`
+global.bottime = `𝗧 𝗜 𝗠 𝗘 : ${wktuwib}`
 global.wm = '© 𝙁𝘼𝘾𝙃𝙍𝙄𝘽𝙊𝙏-MDོ'
 global.watermark = wm
 global.wm2 = '                     「 𝙁𝘼𝘾𝙃𝙍𝙄𝘽𝙊𝙏-𝙈𝘿 あ⁩ 」'
@@ -36,7 +38,7 @@ global.eror = '_*Server Error*_'
 global.benar = 'Benar ✅\n'
 global.salah = 'Salah ❌\n'
 global.stiker_wait = 'Stiker sedang dibuat'
-global.packname = '2022'
+global.packname = 'Whatsapp Bot'
 global.author = '© 𝙁𝙖𝙘𝙝𝙧𝙞𝘽𝙤𝙩-𝙈𝘿'
 
 //=============『 Apikey 』================== //
