@@ -2,20 +2,20 @@
 <img src="https://telegra.ph/file/677780c08cc83059ac934.jpg" alt="Hyzer Md-V3" width="300" />
 
 </p>
-<h1 align="center">Hyzer Official</h1>
+<h1 align="center">FachriBot-MD</h1>
 
 >
 >
 >
 </div>
 <p align="center">
-  <a href="https://github.com/Hyzerr"><img title="GitHub" src="https://img.shields.io/badge/Github-Hyzerr.svg?style=for-the-badge&logo=github" /></a>
-  <a href="httts://instagram.com/zexyds_"><img title="Instagram " src="https://img.shields.io/badge/Instagram-Hyzerr.svg?style=for-the-badge&logo=instagram" /></a>
-  <a href="https://youtube.com/channel/UCBtUyjfIclyuu7yXKS0dAMw"><img title="Youtube" src="https://img.shields.io/badge/Youtube-Hyzerr.svg?style=for-the-badge&logo=youtube" /></a>
+  <a href="https://github.com/Ipulpachri"><img title="GitHub" src="https://img.shields.io/badge/Github-Hyzerr.svg?style=for-the-badge&logo=github" /></a>
+  <a href="httts://instagram.com/sfdesign_id"><img title="Instagram " src="https://img.shields.io/badge/Instagram-Hyzerr.svg?style=for-the-badge&logo=instagram" /></a>
+  <a href="https://youtube.com/c/SaefulFahri"><img title="Youtube" src="https://img.shields.io/badge/Youtube-Hyzerr.svg?style=for-the-badge&logo=youtube" /></a>
   <a href="https://api-hyzerr.herokuapp.com"><img title="Rest Api" src="https://img.shields.io/badge/Rest Api-Hyzerr.svg?style=for-the-badge&logo=twitter" /></a>
   <h4 align="center">
   <a
-  <a href="https://wa.me/6287892711054">Chat Saya Jika Ingin Menanyakan Sesuatu </a>
+  <a href="https://wa.me/6285713041886">Chat Saya Jika Ingin Menanyakan Sesuatu </a>
 </h4>
 </p>
 
@@ -47,10 +47,10 @@ WhatsApp Bot Multi Device
 | **Node.js**     | heroku/nodejs|
 
 # Creator Bot
- [![Ilman](https://github.com/ilmanhdyt.png?size=200)](https://github.com/ilmanhdyt) | [![Hyzer](https://github.com/Hyzerr.png?size=200)](https://github.com/Hyzerr) 
+ [![Ilman](https://github.com/ilmanhdyt.png?size=200)](https://github.com/ilmanhdyt) | [![Hyzer](https://github.com/Hyzerr.png?size=200)](https://github.com/Hyzerr) | [![Fachri](https://github.com/ipulpachri.png?size=200)](https://github.com/ipulpachri)
 ----|----
-[Ilman](https://github.com/ilmanhdyt) | [Hyzer](https://github.com/Hyzerr)
- Author | Creator
+[Ilman](https://github.com/ilmanhdyt) | [Hyzer](https://github.com/Hyzerr) | [Fachri](https://github.com/ipulpachri)
+ Author | Creator | Recode Ulang
  
 ### Hyzer Statistics
 
