@@ -15,23 +15,16 @@ item3.X-ABLabel:📍 LOCATION
 item4.URL:${instagram}
 item4.X-ABLabel:Website
 END:VCARD`
-let buttons = [
-  {buttonId: '.donasi', buttonText: {displayText: 'Donasi'}, type: 1},
-  {buttonId: '.menu', buttonText: {displayText: 'Menu'}, type: 1},
-]
 const sentMsg  = await conn.sendMessage(
     m.chat,
     { 
         contacts: { 
             displayName: 'OWNER GW', 
             contacts: [{ vcard }] 
-`.trim(),    footerText: `jgn sungkan chat ya kak`, 
-    buttons: buttons,
-  headerType: 'EMPTY'
         }
     }
 )
-await conn.reply(m.chat, "itu Nomor Orang Ganteng", sentMsg)}
+await conn.reply(m.chat, "itu Nomor Orang Ganteng", wm3, 'Oke', 'thanks', sentMsg, m)}
 handler.help = ['owner', 'creator']
 handler.tags = ['info']
 
