@@ -1,5 +1,5 @@
 const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys')
-let handler = async (m, {conn}) => {
+let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
 const vcard = `BEGIN:VCARD
 VERSION:3.0
 N:Sy;Bot;;;
@@ -27,7 +27,6 @@ let tm = {
 text: text,
 footer: global.wm,
 templateButtons: templateButtons,
-image: {url: fla + 'Owner'}
 }
 const sentMsg  = await conn.sendMessage(
     m.chat,
