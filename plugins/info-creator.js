@@ -9,7 +9,7 @@ remoteJid: 'status@broadcast'
 message: {
 locationMessage: {
 name: 'Ini Kak Owner FachriBot OωO',
-jpegThumbnail: fs.readFileSync('https://telegra.ph/file/843f1cb89170180568d64.jpg')
+jpegThumbnail: fs.readFileSync('./d11e20d44501e1a59439b5344e07f5d7.jpg')
   }
  }
 }
@@ -17,7 +17,7 @@ let list = []
   for (let i of owner.map(v => v + '@s.whatsapp.net')) {
   list.push({
             "displayName": this.getName(i),
-            "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:Fachri\nitem1.TEL;waid=6285713041886:6285713041886\nitem1.X-ABLabel: Jadilah Dirimu Sendiri ^ω^\nEND:VCARD`
+            "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:Fachri\nitem1.TEL;waid=6285713041886:6285713041886\nitem1.X-ABLabel: Jadilah Dirimu Sendiri ^ω^\nitem2.EMAIL;type=INTERNET:saefulfachri18@gmail.com\nitem2.X-ABLabel:Email\nEND:VCARD`
           })
   }
         test = await this.sendMessage(m.chat, {
