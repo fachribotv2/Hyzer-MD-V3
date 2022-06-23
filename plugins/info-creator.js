@@ -1,43 +1,37 @@
-let fs = require('fs')
-let handler = async function (m) {
-	const fakegrup = {
-	key : {
-fromMe: false,
-participant : '0@s.whatsapp.net',
-remoteJid: 'status@broadcast'
-},
-message: {
-locationMessage: {
-name: 'Ini Kak Owner FachriBot OωO',
-jpegThumbnail: fs.readFileSync('./d11e20d44501e1a59439b5344e07f5d7.jpg')
-  }
- }
-}
-let list = []
-  for (let i of owner.map(v => v + '@s.whatsapp.net')) {
-  list.push({
-            "displayName": this.getName(i),
-            "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:Fachri\nitem1.TEL;waid=6285713041886:6285713041886\nitem1.X-ABLabel: Jadilah Dirimu Sendiri ^ω^\nitem2.EMAIL;type=INTERNET:saefulfachri18@gmail.com\nitem2.X-ABLabel:Email\nEND:VCARD`
-          })
-  }
-        test = await this.sendMessage(m.chat, {
-        "displayName": `${list.length} Contact`,
-        "contacts": list 
-        }, 'contactsArrayMessage', { quoted: fakegrup })
-          let buttons = [
+const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys')
+let handler = async (m, {conn}) => {
+const vcard = `BEGIN:VCARD
+VERSION:3.0
+N:Sy;Bot;;;
+FN: Fachri 
+item.ORG: Seseorang Akan Selalu Terlihat Buruk di Mata Pembenci!
+item1.TEL;waid=6285713041886:6285713041886@s.whatsapp.net
+item1.X-ABLabel:Sibuk 
+item2.EMAIL;type=INTERNET:saefulfachri18@gmail.com
+item2.X-ABLabel:Email
+item3.ADR:;;🇮🇩 INDONESIA;;;;
+item3.X-ABADR:ac
+item3.X-ABLabel:📍 LOCATION
+item4.URL:${instagram}
+item4.X-ABLabel:Website
+END:VCARD`
+let buttons = [
   {buttonId: '.donasi', buttonText: {displayText: 'Donasi'}, type: 1},
   {buttonId: '.menu', buttonText: {displayText: 'Menu'}, type: 1},
 ]
-const buttonsMessage = {
-    contentText: `
-Itu Owner Ku Kak >ω<
-*Jangan Di Apa Apain Kak Owner Ku.*
-`.trim(),    footerText: `jgn sungkan chat ya kak`,
+const sentMsg  = await conn.sendMessage(
+    m.chat,
+    { 
+        contacts: { 
+            displayName: 'OWNER GW', 
+            contacts: [{ vcard }] 
+`.trim(),    footerText: `jgn sungkan chat ya kak`, 
     buttons: buttons,
   headerType: 'EMPTY'
-}
-conn.sendMessage(m.chat, buttonsMessage, 'buttonsMessage', { quoted: test})
-}
+        }
+    }
+)
+await conn.reply(m.chat, "itu Nomor Orang Ganteng", sentMsg)}
 handler.help = ['owner', 'creator']
 handler.tags = ['info']
 
