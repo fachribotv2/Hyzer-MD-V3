@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://telegra.ph/file/677780c08cc83059ac934.jpg" alt="Hyzer Md-V3" width="300" />
+<img src="https://github.com/Ipulpachri/Hyzer-MD-V3/blob/master/d11e20d44501e1a59439b5344e07f5d7.jpg" alt="Hyzer Md-V3" width="300" />
 
 </p>
 <h1 align="center">FachriBot-MD</h1>
