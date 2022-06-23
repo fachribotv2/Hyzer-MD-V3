@@ -15,7 +15,7 @@ global.gopay = '-'
 //=============『 Info Bot 』=================//
 global.namebot = '𝙁𝘼𝘾𝙃𝙍𝙄𝘽𝙊𝙏-𝙈𝘿'
 global.gc = 'https://chat.whatsapp.com/GimZmhA2XTQFfPXk4XMrv6'
-global.web = 'https://ipulpachri.github.io/docs' //ubah jadi website lu, bisa link ig, link github, link yt, klo link gc ntr beda tampilan lagi. 
+global.web = 'https://ipulpachri.github.io/fachriweb' //ubah jadi website lu, bisa link ig, link github, link yt, klo link gc ntr beda tampilan lagi. 
 global.price1 = '1 bulan = 10.000\n2 Minggu 7.000\n1 Minggu 5.000'
 
 //=======『 Tampilan Dan Lainnya 』============//
