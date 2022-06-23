@@ -35,7 +35,11 @@ const sentMsg  = await conn.sendMessage(
     { 
         contacts: { 
             displayName: 'OWNER GW', 
-            contacts: [{ vcard + vcard2 }] 
+            contacts: [{ vcard }] 
+    {
+        contacts: { 
+            displayName: 'OWNER GW', 
+            contacts: [{ vcard2 }] 
         }
     }
 )
