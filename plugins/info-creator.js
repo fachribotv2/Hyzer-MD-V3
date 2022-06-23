@@ -23,7 +23,7 @@ const templateButtons = [
     {index: 5, quickReplyButton: {displayText: 'Back', id: '.menu'}},
 ]
 let tm = {
-text: sentMsg,
+text: "itu Nomor Orang Ganteng",
 footer: global.wm,
 templateButtons: templateButtons,
 image: {url: fla + 'Owner'}
@@ -37,7 +37,7 @@ const sentMsg  = await conn.sendMessage(
         }
     }
 )
-await conn.sendBut(m.chat, "itu Nomor Orang Ganteng", tm, m)}
+await conn.sendBut(m.chat, tm, sentMsg)}
 handler.help = ['owner', 'creator']
 handler.tags = ['info']
 
