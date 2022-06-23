@@ -24,7 +24,7 @@ const sentMsg  = await conn.sendMessage(
         }
     }
 )
-await conn.sendBut(m.chat, "itu Nomor Orang Ganteng", wm3, 'Oke', 'thanks', sentMsg)}
+await conn.sendBut(m.chat, "itu Nomor Orang Ganteng", wm3, 'Sewa', '.sewabot', 'Back', '.menu', sentMsg)}
 handler.help = ['owner', 'creator']
 handler.tags = ['info']
 
