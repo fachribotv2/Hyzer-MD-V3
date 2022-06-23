@@ -48,8 +48,10 @@ WhatsApp Bot Multi Device
 
 # Creator Bot
  [![Ilman](https://github.com/ilmanhdyt.png?size=200)](https://github.com/ilmanhdyt) | [![Hyzer](https://github.com/Hyzerr.png?size=200)](https://github.com/Hyzerr) | [![Fachri](https://github.com/ipulpachri.png?size=200)](https://github.com/ipulpachri)
-----|----
+
+
 [Ilman](https://github.com/ilmanhdyt) | [Hyzer](https://github.com/Hyzerr) | [Fachri](https://github.com/ipulpachri)
+
  Author | Creator | Recode Ulang
  
 ### Hyzer Statistics
