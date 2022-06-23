@@ -15,6 +15,19 @@ item3.X-ABLabel:📍 LOCATION
 item4.URL:${instagram}
 item4.X-ABLabel:Website
 END:VCARD`
+const templateButtons = [
+    {index: 1, urlButton: {displayText: '✨ Website Creator', url: web}},
+    {index: 2, urlButton: {displayText: '📷 Instagram', url: instagram}},
+    {index: 3, urlButton: {displayText: '🌎 Official Group', url: gc}},
+    {index: 4, quickReplyButton: {displayText: 'Donasi', id: '.donasi'}},
+    {index: 5, quickReplyButton: {displayText: 'Back', id: '.menu'}},
+]
+let tm = {
+text: sentMsg,
+footer: global.wm,
+templateButtons: templateButtons,
+image: {url: fla + 'Owner'}
+}
 const sentMsg  = await conn.sendMessage(
     m.chat,
     { 
@@ -24,7 +37,7 @@ const sentMsg  = await conn.sendMessage(
         }
     }
 )
-await conn.sendBut(m.chat, "itu Nomor Orang Ganteng", 'jgn sungkan chat ya kak', 'Sewa', '.sewabot', sentMsg)}
+await conn.sendBut(m.chat, "itu Nomor Orang Ganteng", tm, m)}
 handler.help = ['owner', 'creator']
 handler.tags = ['info']
 
