@@ -26,7 +26,7 @@ global.lolkey = 'Papah-Chan' //biar mudah ngegantinya semisal apikeynya expired:
 global.zenzkey = 'BagasPrdn' //ganti jadi apikey lu kalau expired
 global.wm = '© 𝙁𝘼𝘾𝙃𝙍𝙄𝘽𝙊𝙏-MDོ'
 global.watermark = wm
-global.wm2 = '                     「 𝙁𝘼𝘾𝙃𝙍𝙄𝘽𝙊𝙏-𝙈𝘿 あ⁩ 」'
+global.wm2 = '                      「 𝙁𝘼𝘾𝙃𝙍𝙄𝘽𝙊𝙏-𝙈𝘿 あ⁩ 」'
 global.wm3 = '⫹⫺ 𝙁𝙖𝙘𝙝𝙧𝙞𝘽𝙤𝙩-𝙈𝘿 あ⁩'
 global.htki = '––––––『' 
 global.htka = '』––––––'
@@ -37,7 +37,7 @@ global.eror = '_*Server Error*_'
 global.benar = 'Benar ✅\n'
 global.salah = 'Salah ❌\n'
 global.stiker_wait = 'Stiker sedang dibuat'
-global.packname = 'Whatsapp Bot'
+global.packname = ''
 global.author = '© 𝙁𝙖𝙘𝙝𝙧𝙞𝘽𝙤𝙩-𝙈𝘿'
 
 //=============『 Apikey 』================== //
