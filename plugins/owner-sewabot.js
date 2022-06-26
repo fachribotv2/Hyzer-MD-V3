@@ -13,7 +13,7 @@ let handler = async (m) => {
                             }
                           }
                         }
-conn.sendBut(m.chat, price1, wm, 'OWNER', '#owner', fdoc)
+conn.sendBut(m.chat, price1, 'Mau sewa bot?', 'OWNER', '#owner', fdoc)
 }
 handler.help = ['sewa', 'sewabot']
 handler.tags = ['info']
