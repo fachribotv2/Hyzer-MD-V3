@@ -266,7 +266,7 @@ const ftroli = {
     status: 1,
     surface : 1,
     message: `Hai Kak ${name}!`, 
-    orderTitle: `▮Menu ▸`,
+    orderTitle: `Menu ▸`,
     thumbnail: await (await fetch(fla + 'Menu')).buffer(), //Gambarnye
     sellerJid: '0@s.whatsapp.net' 
     }
@@ -466,7 +466,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
               "participant": m.sender,
               "quotedMessage": m.message
             }
-    }}), { userJid: m.participant || m.key.remoteJid, quoted: fdoc });
+    }}), { userJid: m.participant || m.key.remoteJid, quoted: ftroli });
     return await conn.relayMessage(
         m.key.remoteJid,
         template.message,
@@ -530,7 +530,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
           hydratedTemplate: {
             imageMessage: message.imageMessage, 
             hydratedContentText: text, 
-            hydratedFooterText: wm2, 
+            hydratedFooterText: wm, 
             hydratedButtons: [{
             urlButton: {
                displayText: 'Website Creator',
