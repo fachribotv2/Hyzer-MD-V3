@@ -534,7 +534,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
             hydratedButtons: [{
             urlButton: {
                displayText: 'Website Creator',
-               url: 'https://ipulpachri.github.io/fachriweb/',
+               url: 'https://fachriweb.vercel.app',
              }
 
            },
