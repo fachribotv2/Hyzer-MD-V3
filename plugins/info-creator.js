@@ -12,7 +12,7 @@ item2.X-ABLabel:Email
 item3.ADR:;;🇮🇩 Indonesia;;;;
 item3.X-ABADR:ac
 item3.X-ABLabel:Region
-item4.URL:${instagram}
+item4.URL:https://fachriweb.vercel.app
 item4.X-ABLabel:Website
 END:VCARD`
 const sentMsg  = await conn.sendMessage(
