@@ -466,7 +466,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
               "participant": m.sender,
               "quotedMessage": m.message
             }
-    }}), { userJid: m.participant || m.key.remoteJid, quoted: fkontak });
+    }}), { userJid: m.participant || m.key.remoteJid, quoted: fdoc });
     return await conn.relayMessage(
         m.key.remoteJid,
         template.message,
