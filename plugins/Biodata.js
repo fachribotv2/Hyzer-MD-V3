@@ -15,6 +15,7 @@ let teks = 'Fachri'
     orderTitle: `Menu ▸`,
     thumbnail: await (await fetch(fla + 'Menu')).buffer(), //Gambarnye
     sellerJid: '0@s.whatsapp.net'
+
 let ext = `
 *BIODATA OWNER*
 
