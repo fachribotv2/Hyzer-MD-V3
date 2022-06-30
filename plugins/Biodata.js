@@ -1,23 +1,14 @@
 let fs = require('fs')
 let handler = async (m, { conn, text }) => {
 let teks = 'Fachri'
-   ftroli = {
-    key : {
-    remoteJid: 'status@broadcast',
-    participant : '0@s.whatsapp.net'
-    },
-    message: {
-    orderMessage: {
-    itemCount : 2022,
-    status: 1,
-    surface : 1,
-    message: `Hai, Salken Kak👋`, 
-    orderTitle: `Menu ▸`,
-    thumbnail: await (await fetch(fla + 'Menu')).buffer(), //Gambarnye
-    sellerJid: '0@s.whatsapp.net'
-    }
-    }
-    }
+   fdoc = {
+   key : {
+   remoteJid: 'status@broadcast',
+   participant : '0@s.whatsapp.net'
+   },
+   message: {
+   documentMessage: {
+   title: wm,
 let ext = `
 *BIODATA OWNER*
 
@@ -37,7 +28,7 @@ let ext = `
 _Oke udah itu aja terimakasih_
 
 `.trim()
-conn.send3ButtonImg(m.chat, fla + teks, ext, 'Recoded By Fachri', 'Nomor Owner', '.owner', 'Donasi', '.donasi', 'Sewa Bot', '.sewabot', ftroli)
+conn.send3ButtonImg(m.chat, fla + teks, ext, 'Recoded By Fachri', 'Nomor Owner', '.owner', 'Donasi', '.donasi', 'Sewa Bot', '.sewabot', fdoc)
 
 }
 handler.help = ['owner']
