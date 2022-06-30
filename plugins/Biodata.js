@@ -24,16 +24,6 @@ conn.send3ButtonImg(m.chat, fla + teks, ext, 'Recoded By Fachri', 'Nomor Owner',
 }
 handler.help = ['owner']
 handler.tags = ['info']
-handler.command = /^infowner$/i
-handler.owner = false
-handler.mods = false
-handler.premium = false
-handler.group = false
-handler.private = false
-
-handler.admin = false
-handler.botAdmin = false
-
-handler.fail = null
+handler.command = /^infoowner$/i
 
 module.exports = handler
