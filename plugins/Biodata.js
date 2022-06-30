@@ -1,5 +1,6 @@
-let fetch = require('node-fetch')
+let fs = require('fs')
 let handler = async (m, { conn, text }) => {
+let teks = 'Fachri'
   let ext= `
 *BIODATA OWNER*
 
@@ -18,7 +19,7 @@ let handler = async (m, { conn, text }) => {
 _Oke udah itu aja terimakasih_
 
 `.trim()
-conn.send3ButtonLoc(m.chat, await (await fetch(fla + 'Fachri')).buffer(), ext, 'Recoded By Fachri', 'Nomor Owner', '.owner', 'Donasi', '.donasi', 'Sewa Bot', '.sewabot', m)
+conn.send3ButtonImg(m.chat, fla + teks, ext, 'Recoded By Fachri', 'Nomor Owner', '.owner', 'Donasi', '.donasi', 'Sewa Bot', '.sewabot', m)
 
 }
 handler.help = ['owner']
