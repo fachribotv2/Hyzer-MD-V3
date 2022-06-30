@@ -1,14 +1,6 @@
 let fs = require('fs')
 let handler = async (m, { conn, text }) => {
 let teks = 'Fachri'
-const fdoc = {
-   key : {
-   remoteJid: 'status@broadcast',
-   participant : '0@s.whatsapp.net'
-   },
-   message: {
-   documentMessage: {
-   title: wm,
 let ext = `
 *BIODATA OWNER*
 
@@ -28,7 +20,7 @@ let ext = `
 _Oke udah itu aja terimakasih_
 
 `.trim()
-conn.send3ButtonImg(m.chat, fla + teks, ext, 'Recoded By Fachri', 'Nomor Owner', '.owner', 'Donasi', '.donasi', 'Sewa Bot', '.sewabot', fdoc)
+conn.send3ButtonImg(m.chat, fla + teks, ext, 'Recoded By Fachri', 'Nomor Owner', '.owner', 'Donasi', '.donasi', 'Sewa Bot', '.sewabot', m)
 
 }
 handler.help = ['owner']
