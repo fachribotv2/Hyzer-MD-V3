@@ -1,7 +1,7 @@
 let fs = require('fs')
 let handler = async (m, { conn, text }) => {
 let teks = 'Fachri'
-   fdoc = {
+const fdoc = {
    key : {
    remoteJid: 'status@broadcast',
    participant : '0@s.whatsapp.net'
