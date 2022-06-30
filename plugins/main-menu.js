@@ -320,11 +320,15 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "description": "Menampilkan Menu Info",
                   "rowId": `${_p}? info`
                 },{
+                  "title": "😼 INFO OWNER",
+                  "description": "Biodata Owner",
+                  "rowId": `.infoowner`
+                },{
                   "title": "⌛ RUNTIME BOT",
                   "description": "Bot Aktif Selama...",
                   "rowId": `.runtime`
                 }],
-                "title": "INFORMASI BOT"
+                "title": "INFORMASI DAN LAINNYA"
               }, {
                 "rows": [{
                   "title": `│🧾│ SEMUA PERINTAH`,
