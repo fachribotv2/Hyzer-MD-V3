@@ -458,7 +458,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "description": "Sc yg di pakai FachriBot",
                   "rowId": `.sc`
                 },{
-                  "title": "👑 CONTRIBUTION",
+                  "title": "👑 CONTRIBUTIONS",
                   "description": "Terimakasih kpd yg membantu pembuatan FachriBot",
                   "rowId": `.tqto`
                 }
