@@ -1,10 +1,3 @@
-/*
- * ngelarang lu biar g diubah kyknya emg susah ya anjg
- * jadi kalau lu g bsa ngehargain orang
- * setidaknya buat sc ori by gw, trs buat sc lu hasil copas tuh
- * better bgtu dripada nma gw dihapus smua
- * najis 👎🗿
-*/
 
 let handler = async (m, { conn }) => {
 let ye = `@${m.sender.split`@`[0]}`
@@ -28,9 +21,7 @@ fdoc = {
 const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
-           hydratedContentText: esce,
-           locationMessage: { 
-           jpegThumbnail: { 
+           hydratedContentText: esce, 
            hydratedFooterText: wm,
            hydratedButtons: [{
              urlButton: {
