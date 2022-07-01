@@ -7,17 +7,6 @@
 */
 
 let handler = async (m, { conn }) => {
-const fdoc = {
-   key : {
-   remoteJid: 'status@broadcast',
-   participant : '0@s.whatsapp.net'
-   },
-   message: {
-   documentMessage: {
-   title: wm,
-   }
-  }
-}
 let ye = `@${m.sender.split`@`[0]}`
 let esce = `
 Hai ${ye} Lagi Nyari Sc Ya? 
@@ -25,7 +14,18 @@ Hai ${ye} Lagi Nyari Sc Ya?
 Nih Link Sc Nya Dibawah :
 https://github.com/Ipulpachri/Hyzer-MD-V3
 `
-conn.sendBut(m.chat, esce, 'Jgn Lupa Kasih Star&Follow Ya kak', 'Oke', 'thanks', m) 
+fdoc = {
+   key : {
+   remoteJid: 'status@broadcast',
+   participant : '0@s.whatsapp.net'
+   },
+   message: {
+   documentMessage: {
+   title: wm,
+                           }
+                          }
+                        }
+conn.sendBut(m.chat, esce, 'Jgn Lupa Kasih Star&Follow Ya kak', 'Oke', 'thanks', fdoc) 
 }
 handler.help = ['sc', 'sourcecode']
 handler.tags = ['info']
