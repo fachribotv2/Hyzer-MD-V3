@@ -15,7 +15,7 @@ let ext = `
 *instagram* : @sfdesign.id
 *Facebook* : @Saeful Fachri
 *Youtube* : SF Design
-*Gmail* : saefulfachri18@gmail.com
+*Email* : saefulfachri18@gmail.com
  
 _Oke udah itu aja terimakasih_
 
