@@ -25,4 +25,3 @@ handler.command = /^(sc|sourcecode)$/i
 
 module.exports = handler
 
-│⬡
