@@ -307,7 +307,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
             description: menuu,
             buttonText: 'LIST MENU',
             listType: 1,
-            footerText: "𝙁𝙖𝙘𝙝𝙧𝙞𝘽𝙤𝙩 By Fachri",
+            footerText: "© Created By Fachri",
             mtype: 'listMessage',
             sections: [
               {
