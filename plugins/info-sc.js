@@ -17,7 +17,7 @@ fdoc = {
                            }
                           }
                         }
-await conn.send2But(m.chat, esce, Hayoo? Ngapain bg:", 'Owner', '.owner', 'Sewa', '.sewabot', fdoc) 
+await conn.send2But(m.chat, esce, 'Hayoo? Ngapain bg:"', 'Owner', '.owner', 'Sewa', '.sewabot', fdoc) 
 }
 handler.help = ['sc', 'sourcecode']
 handler.tags = ['info']
