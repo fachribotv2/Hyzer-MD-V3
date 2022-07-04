@@ -37,7 +37,7 @@ const defaultMenu = {
 ‖ ✾ Uptime: *%uptime (%muptime)*
 ‖ ✾ Database: %rtotalreg dari %totalreg
 ‖ ✾ Memory Used : *${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB*
-❏═════━┅⬣
+┗═════━┅⬣
 %readmore`.trimStart(), 
   header: '❏––––––『 %category 』––––––',
   body: '┊✦ %cmd %islimit %isPremium',
@@ -307,7 +307,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
             description: menuu,
             buttonText: 'LIST MENU',
             listType: 1,
-            footerText: "FachriBot By Fachri",
+            footerText: "𝙁𝙖𝙘𝙝𝙧𝙞𝘽𝙤𝙩 By Fachri",
             mtype: 'listMessage',
             sections: [
               {
@@ -571,7 +571,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
            }]
          }
        }
-     }), { userJid: m.sender, quoted: fkontak });
+     }), { userJid: m.sender, quoted: m });
      //conn.reply(m.chat, text.trim(), m)
     return await conn.relayMessage(
          m.chat,
