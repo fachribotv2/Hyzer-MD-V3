@@ -14,7 +14,7 @@ let teks = 'Sewa FachriBot'
                             }
                           }
                         }
-conn.send2ButtonImg(m.chat, fla + teks, price1, 'Mau sewa bot?', 'OWNER', '#owner', 'DONASI', '#donasi', fdoc)
+conn.send2ButtonImg(m.chat, fla + teks, price1, 'Mau sewa bot?', 'Owner', '#owner', 'Donasi', '#donasi', fdoc)
 }
 handler.help = ['sewa', 'sewabot']
 handler.tags = ['info']
