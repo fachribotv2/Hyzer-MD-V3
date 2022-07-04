@@ -2,10 +2,9 @@
 let handler = async (m, { conn }) => {
 let ye = `@${m.sender.split`@`[0]}`
 let esce = `
-Hai ${ye} Lagi Nyari Sc Ya?
 ╭─❑
-│✾ SCRIPT: PRIVATE 🔒
-│✾ BASE: https://github.com/Hyzerr/Hyzer-MD-V3
+│⬡ *SCRIPT:* PRIVATE 🔒
+│⬡ *BASE:* https://github.com/Hyzerr/Hyzer-MD-V3
 ╰─❑`
 fdoc = {
    key : {
@@ -18,10 +17,12 @@ fdoc = {
                            }
                           }
                         }
-await conn.send2But(m.chat, esce, wm, 'Owner', '.owner', 'Sewa', '.sewabot', m) 
+await conn.send2But(m.chat, esce, Hayoo? Ngapain bg:", 'Owner', '.owner', 'Sewa', '.sewabot', fdoc) 
 }
 handler.help = ['sc', 'sourcecode']
 handler.tags = ['info']
 handler.command = /^(sc|sourcecode)$/i
 
 module.exports = handler
+
+│⬡
