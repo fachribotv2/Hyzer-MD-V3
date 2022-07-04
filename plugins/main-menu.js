@@ -571,7 +571,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
            }]
          }
        }
-     }), { userJid: m.sender, quoted: m });
+     }), { userJid: m.sender, quoted: fkontak });
      //conn.reply(m.chat, text.trim(), m)
     return await conn.relayMessage(
          m.chat,
