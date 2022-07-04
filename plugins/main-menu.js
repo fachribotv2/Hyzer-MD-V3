@@ -528,11 +528,11 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
     
 //━━━━━━━━[ SETTINGS MENU ]━━━━━━━━//
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/anya.mp4')}, { upload: conn.waUploadToServer })
+    let message = await prepareWAMessageMedia({ image: fs.readFileSync('./d11e20d44501e1a59439b5344e07f5d7.jpg')}, { upload: conn.waUploadToServer })
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
-           videoMessage: message.videoMessage,
+           imageMessage: message.imageMessage,
            hydratedContentText: text.trim(),
            hydratedFooterText: wm,
            hydratedButtons: [{           	           	
