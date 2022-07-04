@@ -265,7 +265,7 @@ const ftroli = {
     itemCount : 2022,
     status: 1,
     surface : 1,
-    message: `Hai Kak ${name}!`, 
+    message: wm, 
     orderTitle: `Menu ▸`,
     thumbnail: await (await fetch(fla + 'Menu')).buffer(), //Gambarnye
     sellerJid: '0@s.whatsapp.net' 
