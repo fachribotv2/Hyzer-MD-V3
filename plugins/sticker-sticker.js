@@ -1,6 +1,29 @@
 const { sticker1, sticker5 } = require('../lib/sticker')
 
 let handler = async (m, { conn }) => {
+const ftoko = {
+key: {
+			fromMe: false,
+			participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "status@broadcast" } : {})
+		},
+		message: {
+			"productMessage": {
+				"product": {
+					"productImage":{
+						"mimetype": "image/jpeg",
+						"jpegThumbnail": fs.readFileSync('./d11e20d44501e1a59439b5344e07f5d7.jpg'), //Gambarnye
+					},
+					"title": `Nih Kak~`, //Kasih namalu 
+					"description": `Rp 9.999.999.999`, 
+					"currencyCode": "Rp",
+					"priceAmount1000": "500000",
+					"retailerId": `ppk`,
+					"productImageCount": 1
+				},
+				    "businessOwnerJid": `628162633549@s.whatsapp.net`
+		}
+	}
+}
     let stiker = false
     try {
         let q = m.quoted ? m.quoted : m
@@ -28,7 +51,7 @@ let handler = async (m, { conn }) => {
     finally {
         if (stiker) {
             m.reply(stiker_wait)
-            await conn.sendFile(m.chat, stiker, '', '', m)
+            await conn.sendFile(m.chat, stiker, '', '', ftoko)
         }
         else {
 
