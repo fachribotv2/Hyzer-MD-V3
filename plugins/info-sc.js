@@ -5,7 +5,7 @@ let esce = `
 Hai ${ye} Lagi Nyari Sc Ya?
 ╭─❑
 │✾ SCRIPT: PRIVATE 🔒
-│✾ BASE: https://github.com/ilmanhdyt/ShiraoriBOT-Md
+│✾ BASE: https://github.com/Hyzerr/Hyzer-MD-V3
 ╰─❑`
 fdoc = {
    key : {
