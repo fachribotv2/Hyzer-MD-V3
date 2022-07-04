@@ -477,6 +477,25 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
         { messageId: template.key.id }
     )
     }
+        const fload = {
+    key : {
+    remoteJid: 'status@broadcast',
+    participant : '0@s.whatsapp.net'
+    },
+    message: {
+    orderMessage: {
+    itemCount : 2022,
+    status: 1,
+    surface : 1,
+    message: '[❗] Memuat Menu ' + teks + '...\n Semangat Yah Kak ^ω^', 
+    orderTitle: `Menu ▸`,
+    thumbnail: await (await fetch(fla + 'Loading')).buffer(), //Gambarnye
+    sellerJid: '0@s.whatsapp.net' 
+    }
+    }
+    }
+
+    conn.reply(m.chat, '*Tunggu Sebentar Kak. . .*', fload) 
     let groups = {}
     for (let tag in tags) {
       groups[tag] = []
