@@ -2,10 +2,11 @@
 let handler = async (m, { conn }) => {
 let ye = `@${m.sender.split`@`[0]}`
 let esce = `
-Hai ${ye} Lagi Nyari Sc Ya? 
-
-Sc *FachriBot-MD :*
-Private ~
+Hai ${ye} Lagi Nyari Sc Ya?
+╭─❑
+│✾ SCRIPT: PRIVATE 🔒
+│✾ BASE: https://github.com/ilmanhdyt/ShiraoriBOT-Md
+╰─❑
 `
 fdoc = {
    key : {
