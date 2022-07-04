@@ -18,7 +18,7 @@ fdoc = {
                            }
                           }
                         }
-conn.send2ButtonImg(m.chat, esce, wm, 'Owner', '.owner', 'Sewa', '.sewabot', m) 
+conn.send2Button(m.chat, esce, wm, 'Owner', '.owner', 'Sewa', '.sewabot', m) 
 }
 handler.help = ['sc', 'sourcecode']
 handler.tags = ['info']
