@@ -19,7 +19,8 @@ let ftroli = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid":
 const sentMsg  = await conn.sendMessage(
     m.chat,
     { 
-        contacts: { displayName: 'Fachri', contacts: [{ vcard }] } }, { quoted: ftroli })  
+        contacts: { displayName: 'Fachri', 
+        contacts: [{ vcard }]   
         }
     }
 )
