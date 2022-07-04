@@ -6,8 +6,7 @@ Hai ${ye} Lagi Nyari Sc Ya?
 ╭─❑
 │✾ SCRIPT: PRIVATE 🔒
 │✾ BASE: https://github.com/ilmanhdyt/ShiraoriBOT-Md
-╰─❑
-`
+╰─❑`
 fdoc = {
    key : {
    remoteJid: 'status@broadcast',
@@ -19,7 +18,7 @@ fdoc = {
                            }
                           }
                         }
-conn.send2Button(m.chat, esce, wm, 'Owner', '.owner', 'Sewa', '.sewabot', m) 
+await conn.send2But(m.chat, esce, wm, 'Owner', '.owner', 'Sewa', '.sewabot', m) 
 }
 handler.help = ['sc', 'sourcecode']
 handler.tags = ['info']
