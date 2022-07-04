@@ -1,6 +1,7 @@
 const { sticker1, sticker5 } = require('../lib/sticker')
 
 let handler = async (m, { conn }) => {
+let fs = require('fs')
 const ftoko = {
 key: {
 			fromMe: false,
