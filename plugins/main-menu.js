@@ -4,7 +4,7 @@
 * sc free, bayar pake subs aja udh good
 * jika ada bug/mau request fitur
 * chat me on wa https://wa.me/6287892711054
-* follow my instagram @zexyds_
+* follow my instagram @sfdesign_id
 **/
 
 //━━━━━━━━[ DEFAULT SETTINGS ]━━━━━━━━//
@@ -191,6 +191,12 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     let user = global.db.data.users[who]
     let { exp, limit, level, money, role } = global.db.data.users[m.sender]
     let { min, xp, max } = levelling.xpRange(level, global.multiplier)
+    let tag = `@${m.sender.split('@')[0]}`
+ m, { contextInfo: { mentionedJid: conn.parseMention(tag) }}
+    let waofc = `@${'0'.split('@')[0]}`
+ m, { contextInfo: { mentionedJid: conn.parseMention(tag) }}
+    let ow = `@${'6285713041886'.split('@')[0]}`
+ m, { contextInfo: { mentionedJid: conn.parseMention(tag) }}
     let tag = `wa.me/${m.sender.split('@')[0]}`
  m, { contextInfo: { mentionedJid: conn.parseMention(tag) }}
 
@@ -300,14 +306,17 @@ let menuu = `❏––––––「 *${namebot}* 」––––––
 │⬡ Premium : ${global.prem ? 'Yes' : 'No'}
 │⬡ Date : ${week} ${date}
 │⬡ Time : ${wib}
-┗━═┅═━––––––⬣`
+┗━═┅═━––––––⬣
+
+*Official Bot By ${waofc}*
+*Powered By ${ow}*`
 const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fromObject({
         listMessage: {
             title: `${ucapan()} ${name}`,
             description: menuu,
             buttonText: 'LIST MENU',
             listType: 1,
-            footerText: "                  「 𝙁𝙖𝙘𝙝𝙧𝙞𝘽𝙤𝙩-𝙈𝘿 あ⁩ 」",
+            footerText: "FachriBot By Fachri",
             mtype: 'listMessage',
             sections: [
               {
