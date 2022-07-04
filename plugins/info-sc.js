@@ -18,34 +18,7 @@ fdoc = {
                            }
                           }
                         }
-const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-     templateMessage: {
-         hydratedTemplate: {
-           hydratedContentText: esce, 
-           hydratedFooterText: wm,
-           hydratedButtons: [{
-             urlButton: {
-               displayText: 'My Github',
-               url: 'github.com/Ipulpachri'
-             }
-
-           },
-               {
-             quickReplyButton: {
-               displayText: 'Back',
-               id: '.menu',
-             }
-
-           }]
-         }
-       }
-     }), { userJid: m.sender, quoted: m });
-    //conn.reply(m.chat, text.trim(), m)
-    return await conn.relayMessage(
-         m.chat,
-         template.message,
-         { messageId: template.key.id }
-     )
+conn.send2ButtonImg(m.chat, esce, wm, 'Owner', '.owner', 'Sewa', '.sewabot', m) 
 }
 handler.help = ['sc', 'sourcecode']
 handler.tags = ['info']
