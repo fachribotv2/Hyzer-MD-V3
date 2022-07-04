@@ -7,7 +7,7 @@ let ext = `
 
 ⬡ *Nama* : Fachri
 ⬡ *Umur* : 14
-⬡ *TTL* : 17.Okto.2k8
+⬡ *TTL* : Tegal, 17.Okto.2k8
 ⬡ *Alamat* : Pemalang, Jawa tengah, Indonesia
 ⬡ *Kelas* : 2 smp
 ⬡ *Status* : Private
