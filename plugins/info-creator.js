@@ -15,7 +15,6 @@ item3.X-ABLabel:Region
 item4.URL:https://fachriweb.vercel.app
 item4.X-ABLabel:Website
 END:VCARD`
-let ftroli = {key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "6289523258649-1604595598@g.us"}, "message": {orderMessage: {itemCount: 1,status: 200, surface: 200, message: `                   「 MY OWNER 」            `, orderTitle: 'Centauri', sellerJid: '0@s.whatsapp.net'}}}                let vcard = 'BEGIN:VCARD\n' // metadata of the contact card
 const sentMsg  = await conn.sendMessage(
     m.chat,
     { 
