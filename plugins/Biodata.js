@@ -21,7 +21,7 @@ let ext = `
 _Oke udah itu aja terimakasih_
 
 `.trim()
-conn.send3ButtonLoc(m.chat, await (await fetch(image)).buffer(), ext, 'Recoded By Fachri', 'Nomor Owner', '.owner', 'Donasi', '.donasi', 'Sewa Bot', '.sewabot', m)
+conn.send3ButtonLoc(m.chat, await (await fetch(fotonya1)).buffer(), ext, 'Recoded By Fachri', 'Nomor Owner', '.owner', 'Donasi', '.donasi', 'Sewa Bot', '.sewabot', m)
 
 }
 handler.help = ['owner']
