@@ -2,10 +2,10 @@
 let handler = async (m, { conn }) => {
 let ye = `@${m.sender.split`@`[0]}`
 let esce = `
-╭─❑
+❏━═┅═━–––
 │⬡ *SCRIPT:* Private🔒
 │⬡ *BASE:* https://github.com/Hyzerr/Hyzer-MD-V3
-╰─❑`
+❑━═┅═━––––––`
 fdoc = {
    key : {
    remoteJid: 'status@broadcast',
