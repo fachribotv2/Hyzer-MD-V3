@@ -326,6 +326,10 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
                   "title": "⌛ RUNTIME BOT",
                   "description": "Bot Aktif Selama...",
                   "rowId": `.runtime`
+                },{
+                  "title": "📌 RULES BOT",
+                  "description": "Sebagai User Yg Baik Harap Patuhi Rules",
+                  "rowId": `.rules`
                 }],
                 "title": "INFORMASI DAN LAINNYA"
               }, {
