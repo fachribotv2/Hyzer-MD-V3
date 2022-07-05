@@ -546,7 +546,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
     
 //━━━━━━━━[ SETTINGS MENU ]━━━━━━━━//
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    let message = await prepareWAMessageMedia({ image: await (await require('node-fetch')(fotonya2)).buffer()}, { upload: conn.waUploadToServer }) 
+    let message = await prepareWAMessageMedia({ image: await (await require('node-fetch')(./d11e20d44501e1a59439b5344e07f5d7.jpg)).buffer()}, { upload: conn.waUploadToServer }) 
       const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
       templateMessage: {
           hydratedTemplate: {
@@ -595,12 +595,6 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
          m.chat,
          template.message,
          { messageId: template.key.id }
-}
-} })
-conn.sendFile(m.chat, vn, 'gratata.mp3', null, m, true, {
-type: 'audioMessage', 
-ptt: true 
-})
      )
 } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
