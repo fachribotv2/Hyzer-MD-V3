@@ -3,7 +3,17 @@ let handler = async (m, { conn }) => {
     let wm = global.wm
     let _uptime = process.uptime() * 1000
     let uptime = clockString(_uptime)
-
+    fdoc = {
+   key : {
+   remoteJid: 'status@broadcast',
+   participant : '0@s.whatsapp.net'
+   },
+   message: {
+   documentMessage: {
+   title: wm, 
+                            }
+                          }
+                        }
     let str = `
 ╭─────[ *Status* ]────✧
 ├◌ Aktif selama ${uptime}
@@ -13,7 +23,7 @@ let handler = async (m, { conn }) => {
 ├◌ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} Pengguna Terbanned
 ╰────────────···
     `.trim()
-conn.send2But(m.chat, str, wm, 'Sewa', '.sewabot', 'Owner', '.owner',m)
+conn.send2But(m.chat, str, wm, 'Sewa', '.sewabot', 'Owner', '.owner', fdoc)
 conn.reply(str)
 }
 handler.help = ['botstatus']
