@@ -42,8 +42,7 @@ const defaultMenu = {
   header: '❏––––––『 %category 』––––––',
   body: '┊✦ %cmd %islimit %isPremium',
   footer: '┗━═┅═━––––––๑\n', 
-  after: `⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❘❚❙❘❙❙❘❚❙❘❙❙❘❘❙❚❙❘❙❚❙❘❙❘❙❚❙ ⌕
-     *々› %me*
+  after: `⌕ ▌│█║▌║▌║║▌║▌║█│▌ ⌕
 `,
 }
 
