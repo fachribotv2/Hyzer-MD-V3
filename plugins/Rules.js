@@ -1,21 +1,6 @@
-let fetch = require('node-fetch')
-let { MessageType } = require('@adiwajshing/baileys')
-let handler = async(m, { conn }) => {
-const fkontak = {
-	"key": {
-    "participants":"0@s.whatsapp.net",
-		"remoteJid": "status@broadcast",
-		"fromMe": false,
-		"id": "Halo"
-	},
-	"message": {
-		"contactMessage": {
-			"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
-		}
-	},
-	"participant": "0@s.whatsapp.net"
-}
-    let kontol = `╭═══〘 *RULES FACHRIBOT* 〙══❏
+let handler = async (m) => {
+let teks = 'Rules'
+let kontol = `╭════════════════❏
 ⬡ 𝙈𝙤𝙝𝙤𝙣 𝙪𝙣𝙩𝙪𝙠 𝙩𝙞𝙙𝙖𝙠 𝙎𝙥𝙖𝙢 𝘽𝙤𝙩 𝙠𝙖𝙧𝙚𝙣𝙖 𝘽𝙤𝙩 𝙞𝙣𝙞 𝙨𝙪𝙙𝙖𝙝 𝙢𝙚𝙢𝙞𝙡𝙞𝙠𝙞 𝙊𝙩𝙤𝙢𝙖𝙩𝙞𝙨 𝘽𝙡𝙤𝙠𝙞𝙧 𝘽𝙖𝙜𝙞 𝙋𝙚𝙣𝙜𝙜𝙪𝙣𝙖 𝘽𝙤𝙩 𝙮𝙖𝙣𝙜 𝙎𝙥𝙖𝙢
 ⬡ 𝙈𝙤𝙝𝙤𝙣 𝙢𝙖𝙖𝙛 𝙟𝙞𝙠𝙖 𝙖𝙙 𝙮𝙜 𝙢𝙚𝙢𝙖𝙠𝙖𝙞 𝙢𝙚𝙣𝙪 𝙉𝙨𝙛𝙬 𝙢𝙖𝙠𝙖 𝙖𝙠𝙖𝙣 𝙙𝙞 𝙗𝙡𝙤𝙘𝙠 𝙤𝙡𝙚𝙝 𝙗𝙤𝙩, 𝙟𝙞𝙠𝙖 𝙙𝙞 𝙜𝙘 𝙩𝙤𝙡𝙤𝙣𝙜 𝙖𝙙𝙢𝙞𝙣 𝙪𝙣𝙩𝙪𝙠 𝙢𝙚𝙣𝙜𝙝𝙪𝙗𝙪𝙣𝙜𝙞 𝙠𝙖𝙢𝙞!!
 ⬡ 𝙈𝙤𝙝𝙤𝙣 𝙪𝙣𝙩𝙪𝙠 𝙩𝙞𝙙𝙖𝙠 𝙈𝙚𝙣𝙚𝙡𝙥𝙤𝙣 𝘽𝙤𝙩 𝙠𝙖𝙧𝙚𝙣𝙖 𝘽𝙤𝙩 𝙞𝙣𝙞 𝙨𝙪𝙙𝙖𝙝 𝙢𝙚𝙢𝙞𝙡𝙞𝙠𝙞 𝙊𝙩𝙤𝙢𝙖𝙩𝙞𝙨 𝘽𝙡𝙤𝙠𝙞𝙧 𝘽𝙖𝙜𝙞 𝙤𝙧𝙖𝙣𝙜 𝙮𝙖𝙣𝙜 𝙣𝙚𝙡𝙥𝙤𝙣 𝘽𝙤𝙩
@@ -34,13 +19,8 @@ const fkontak = {
 5. 𝙊𝙬𝙣𝙚𝙧 𝙁𝙖𝙘𝙝𝙧𝙞 𝙗𝙚𝙧𝙝𝙖𝙠 𝙢𝙚𝙡𝙞𝙝𝙖𝙩 𝙙𝙖𝙩𝙖 𝙧𝙞𝙬𝙖𝙮𝙖𝙩 𝙘𝙝𝙖𝙩 𝙪𝙨𝙚𝙧𝙨.
 6. 𝙊𝙬𝙣𝙚𝙧 𝙁𝙖𝙘𝙝𝙧𝙞 𝙗𝙚𝙧𝙝𝙖𝙠 𝙢𝙚𝙡𝙞𝙝𝙖𝙩 𝙨𝙩𝙖𝙩𝙪𝙨 𝙪𝙨𝙚𝙧𝙨.
 7. 𝙊𝙬𝙣𝙚𝙧 𝙁𝙖𝙘𝙝𝙧𝙞 𝙙𝙖𝙥𝙖𝙩 𝙢𝙚𝙡𝙞𝙝𝙖𝙩 𝙧𝙞𝙬𝙖𝙮𝙖𝙩 𝙘𝙝𝙖𝙩, 𝙙𝙖𝙣 𝙢𝙚𝙙𝙞𝙖 𝙮𝙖𝙣𝙜 𝙙𝙞𝙠𝙞𝙧𝙞𝙢𝙠𝙖𝙣 𝙪𝙨𝙚𝙧𝙨.
-╰═══════════════❏
-║╭─❉ 〔 𝗦𝗧𝗔𝗧𝗨𝗦 𝗕𝗢𝗧 〕 ❉──´-
-║│➥ *name:* Fachri Botz
-║│➥ *HomePage:* -
-║│➥ *Issue:* -
-║│➥ *Total user:* *${Object.keys(global.db.data.users).length}* Pengguna
-║╰──────────────⊰
+╰╰═══════════════
+╭═══════════════❏
 ║╭───❉〘 𝘿𝙊𝙉𝘼𝙎𝙄 〙❉───´-
 ║│➥ Indosat : 628159917553
 ║│➥ Dana : 6285713041886
@@ -58,37 +38,25 @@ const fkontak = {
 ║│ © 2022 𝗥𝗽𝗴 𝘄𝗮𝗯𝗼𝘁-𝗮𝗾
 ║│ 𝗦𝗰𝗿𝗶𝗽 𝗼𝗿𝗶𝗴𝗶𝗻𝗮𝗹 𝗯𝘆 Hyzer
 ║╰─────────────⊰
-╰════〘 ⫹⫺ 𝙁𝙖𝙘𝙝𝙧𝙞𝘽𝙤𝙩-𝙈𝘿 あ 〙 ══❏`.trim()
-  const button = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fromObject({
-        listMessage: {
-            title: `${ucapan()} ${name}`,
-            description: kontol,
-            buttonText: 'LIST MENU',
-            listType: 1,
-            footerText: "© Created By Fachri",
-            mtype: 'listMessage',
-            sections: [{title: "Silahkan di pilih kak gausah pilih yang gaada", rows: [
-        {title: '🧾 › Menu Utama', description: "Kembali ke Menu Utama", rowId:".menu"},
-        {title: '🔖› Sewa Bot', description: "Sewa bot dengan memasukkan bot ke grup kamu", rowId:".sewabot"},
-        {title: '💌 › Group Bot', description: "Official Group Bot Fachri", rowId:".gcbot"},
-        {title: '🍭 › Owner', description: "Creator Fachri  >ω<", rowId:".owner"},
-       ] }],
-        "contextInfo": {
-              "stanzaId": m.key.id,
-              "participant": m.sender,
-              "quotedMessage": m.message
-            }
-    }}), { userJid: m.participant || m.key.remoteJid, quoted: ftroli });
-    return await conn.relayMessage(
-        m.key.remoteJid,
-        template.message,
-        { messageId: template.key.id }
-    )
-    }
-    conn.sendMessage(m.chat, button, { quoted: fkontak })
+╰════〘 ⫹⫺ 𝙁𝙖𝙘𝙝𝙧𝙞𝘽𝙤𝙩-𝙈𝘿 あ 〙 ══❏`
+    let who
+    if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.sender
+    else who = m.sender
+    fdoc = {
+   key : {
+   remoteJid: 'status@broadcast',
+   participant : '0@s.whatsapp.net'
+   },
+   message: {
+   documentMessage: {
+   title: wm, 
+                            }
+                          }
+                        }
+conn.send3ButtonImg(m.chat, fla + teks, kontol, 'Harap Patuhi Rules Yg ada!', 'Owner', '#owner', 'Donasi', '#donasi', 'Sewa', '#sewabot', fdoc)
 }
-
-handler.tags = ['main', 'update']
+handler.tags = ['main']
 handler.command = /^(rules|rule)$/i
 handler.help = ['rules']
-module.exports = handler
+
+module.exports = hhandle
