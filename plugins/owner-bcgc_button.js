@@ -1,10 +1,4 @@
-let handler  = async (m, { conn, text, usedPrefix: _p }) => {
-  let fs = require('fs')
-  let fetch = require('node-fetch')
-  const {
-    MessageType,
-    Mimetype
-} = require("@adiwajshing/baileys");
+let handler = async (m, { conn, isROwner, text }) => {
 const anu = {
 	"key": {
 		"fromMe": false,
@@ -21,23 +15,19 @@ const anu = {
 		}
 	}
 }
-  let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
-  try {
-    pp = await conn.getProfilePicture(who)}
-    catch (e){
+    const delay = time => new Promise(res => setTimeout(res, time))
+    let getGroups = await conn.groupFetchAllParticipating()
+    let groups = Object.entries(getGroups).slice(0).map(entry => entry[1])
+    let anu = groups.map(v => v.id)
+    var pesan = m.quoted && m.quoted.text ? m.quoted.text : text
+    if(!pesan) throw 'teksnya?'
+    m.reply(`Mengirim Broadcast Ke ${anu.length} Chat, Waktu Selesai ${anu.length * 0.5 } detik`)
+    for (let i of anu) {
+    await delay(500)
+    conn.send2Button(i, `${pesan}`, wm, 'OWNER', '.owner', 'MENU', '.menu', anu).catch(_ => _)
     }
-
-  let getGroups = await conn.groupFetchAllParticipating()
-  let groups = Object.entries(getGroups).slice(0).map(entry => entry[1])
-  let cc = text ? m : m.quoted ? await m.getQuotedObj() : false || m
-  let teks = text ? text : cc.text
-  let content = await conn.cMod(m.chat, cc, /bc|broadcast/i.test(text))
-  conn.reply(m.chat, `_Mengirim pesan broadcast ke ${groups.length} grup_`, m)
-  for (let id of groups) conn.send2Button(id, text, '\n_*Fachri Bot By Fachri*_', 'Owner', '.owner', 'Menu', '.menu', anu)
-  conn.reply(m.chat, `_Done_`, m)
+  m.reply(`Sukses Mengirim Broadcast Ke ${anu.length} Group`)
 }
-
-
 handler.help = ['bcgc-v'].map(v => v + ' <teks>')
 handler.tags = ['owner']
 handler.command = /^(bcgcbutton|bcgcb|bcgc-b)$/i
@@ -53,8 +43,3 @@ handler.botAdmin = false
 handler.fail = null
 
 module.exports = handler
-
-const more = String.fromCharCode(8206)
-const readMore = more.repeat(4001)
-
-const randomID = length => require('crypto').randomBytes(Math.ceil(length * .5)).toString('hex').slice(0, length)
