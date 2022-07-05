@@ -548,9 +548,9 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     await conn.sendMessage(m.chat, { "contentText": 'ʚ──── [ *DASHBOARD* ] ────ɞ', "footerText": text,
 "buttons": [
-{buttonId: '.owner', buttonText: {displayText: 'OWNER🐾'}, type: 1},
-{buttonId: '.donasi', buttonText: {displayText: 'DONASI💰'}, type: 1},
-{buttonId: '.rules', buttonText: {displayText: 'RULES✨'}, type: 1}
+{buttonId: '.owner', buttonText: {displayText: 'OWNER'}, type: 1},
+{buttonId: '.donasi', buttonText: {displayText: 'DONASI'}, type: 1},
+{buttonId: '.sewabot', buttonText: {displayText: 'SEWA'}, type: 1}
 ],
 "headerType": "DOCUMENT", "documentMessage": {
             "url": "https://mmg.whatsapp.net/d/f/AsO5KpESy9E0WI72xEVp65rx505bQxvuIma79L8Ue076.enc",
