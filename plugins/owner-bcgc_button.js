@@ -27,7 +27,8 @@ const anu = {
     catch (e){
     }
 
-  let groups = conn.chats.all().filter(v => v.jid.endsWith('g.us') && !v.read_only && v.message && !v.announce).map(v => v.jid)
+  let getGroups = await conn.groupFetchAllParticipating()
+  let groups = Object.entries(getGroups).slice(0).map(entry => entry[1])
   let cc = text ? m : m.quoted ? await m.getQuotedObj() : false || m
   let teks = text ? text : cc.text
   let content = await conn.cMod(m.chat, cc, /bc|broadcast/i.test(text))
