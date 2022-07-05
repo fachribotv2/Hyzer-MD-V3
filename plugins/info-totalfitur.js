@@ -17,7 +17,7 @@ let totalf = Object.values(global.plugins).filter(
 let ye = `@${m.sender.split`@`[0]}`
 let esce = ` 
 Total Fitur FachriBot: ${totalf}`
-conn.sendBut(m.chat, esce, 'Hai Kak, ${ye}', 'Owner', '.owner', fdoc) 
+conn.sendBut(m.chat, esce, 'Hai Kak ${ye}', 'Owner', '.owner', fdoc) 
 }
 handler.help = ['totalfitur']
 handler.tags = ['info']
