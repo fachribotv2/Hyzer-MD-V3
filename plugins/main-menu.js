@@ -486,7 +486,7 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
     itemCount : 2022,
     status: 1,
     surface : 1,
-    message: '[❗] Memuat Menu ' + teks + '...\n Semangat Yah Kak ^ω^', 
+    message: '[❗] Memuat Menu ' + teks + '...\n ${pickRandom(['udh makan belum kak?', 'udh mandi belum kak?', 'Semangat ya kak!', 'Jangan begadang mulu ya!', 'jangan spam ya kak!', 'Jangan lupa donasi yak kak! >.<', 'Jaga kesehatan yaw kak!', 'Jgn lupa makan!', 'Jgn lupa istirahat yak! >.<', 'I Love you kak >.< 💗✨', 'Pr nya udh belum kak?', 'Jgn kebanyakan main hp yk'])}', 
     orderTitle: `Menu ▸`,
     thumbnail: await (await fetch(fla + 'Loading')).buffer(), //Gambarnye
     sellerJid: '0@s.whatsapp.net' 
