@@ -1,3 +1,4 @@
+let fs = require('fs')
 let handler = async (m, { conn, isROwner, text }) => {
 const fgc = {
 	"key": {
