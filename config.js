@@ -15,8 +15,8 @@ global.gopay = '-'
 //=============『 Info Bot 』=================//
 global.namebot = '𝙁𝘼𝘾𝙃𝙍𝙄𝘽𝙊𝙏-𝙈𝘿'
 global.gc = 'https://chat.whatsapp.com/GimZmhA2XTQFfPXk4XMrv6'
-global.web = 'https://ipulpachri.github.io/docs' //ubah jadi website lu, bisa link ig, link github, link yt, klo link gc ntr beda tampilan lagi. 
-global.price1 = '1 bulan = 10.000\n2 Minggu 7.000\n1 Minggu 5.000'
+global.web = 'https://fachriweb.vercel.app' //ubah jadi website lu, bisa link ig, link github, link yt, klo link gc ntr beda tampilan lagi. 
+global.price1 = '1 bulan = 20.000\n2 Minggu 15.000\n1 Minggu 10.000'
 
 //=======『 Tampilan Dan Lainnya 』============//
 global.giflogo = 'https://telegra.ph/file/a46ab7fa39338b1f54d5a.mp4'
