@@ -59,18 +59,33 @@ const fkontak = {
 ║│ 𝗦𝗰𝗿𝗶𝗽 𝗼𝗿𝗶𝗴𝗶𝗻𝗮𝗹 𝗯𝘆 Hyzer
 ║╰─────────────⊰
 ╰════〘 ⫹⫺ 𝙁𝙖𝙘𝙝𝙧𝙞𝘽𝙤𝙩-𝙈𝘿 あ 〙 ══❏`.trim()
-  const button = {
-        buttonText: 'Klik Di sini',
-        description: kontol,
-        sections:  [{title: "Silahkan di pilih kak gausah pilih yang gaada", rows: [
+  const button = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fromObject({
+        listMessage: {
+            title: `${ucapan()} ${name}`,
+            description: kontol,
+            buttonText: 'LIST MENU',
+            listType: 1,
+            footerText: "© Created By Fachri",
+            mtype: 'listMessage',
+            sections: [{title: "Silahkan di pilih kak gausah pilih yang gaada", rows: [
         {title: '🧾 › Menu Utama', description: "Kembali ke Menu Utama", rowId:".menu"},
         {title: '🔖› Sewa Bot', description: "Sewa bot dengan memasukkan bot ke grup kamu", rowId:".sewabot"},
         {title: '💌 › Group Bot', description: "Official Group Bot Fachri", rowId:".gcbot"},
         {title: '🍭 › Owner', description: "Creator Fachri  >ω<", rowId:".owner"},
        ] }],
-        listType: 1
-       }
-    conn.sendMessage(m.chat, button, MessageType.listMessage, { quoted: fkontak })
+        "contextInfo": {
+              "stanzaId": m.key.id,
+              "participant": m.sender,
+              "quotedMessage": m.message
+            }
+    }}), { userJid: m.participant || m.key.remoteJid, quoted: ftroli });
+    return await conn.relayMessage(
+        m.key.remoteJid,
+        template.message,
+        { messageId: template.key.id }
+    )
+    }
+    conn.sendMessage(m.chat, button, { quoted: fkontak })
 }
 
 handler.tags = ['main', 'update']
