@@ -594,6 +594,40 @@ module.exports = handler
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
 
+  const lgs = moment.tz('Asia/Jakarta').format('HH')
+  res = "Selamat dinihari"
+  if (lgs >= 4) {
+    imp = 'https://telegra.ph/file/abff7903bd674a8f9d307.jpg'
+  }
+  if (lgs > 10) {
+    imp = 'https://telegra.ph/file/ba940019735e224132f74.jpg'
+  }
+  if (lgs >= 15) {
+    imp = 'https://telegra.ph/file/a332bbac803e3c631bb07.jpg'
+  }
+  if (lgs >= 18) {
+    imp = 'https://telegra.ph/file/a5c91ab6c58c7be066654.jpg'
+  }
+  return imp
+}
+function logopdf() {
+  const lgs = moment.tz('Asia/Jakarta').format('HH')
+  res = "Selamat dinihari"
+  if (lgs >= 4) {
+    imp = 'https://i.ibb.co/y6TRVt4/virgam.png'
+  }
+  if (lgs > 10) {
+    imp = 'https://i.ibb.co/y6TRVt4/virgam.png'
+  }
+  if (lgs >= 15) {
+    imp = 'https://i.ibb.co/y6TRVt4/virgam.png'
+  }
+  if (lgs >= 18) {
+    imp = 'https://i.ibb.co/y6TRVt4/virgam.png'
+  }
+  return imp
+}
+
 function pickRandom(list) {
   return list[Math.floor(Math.random() * list.length)]
 }
