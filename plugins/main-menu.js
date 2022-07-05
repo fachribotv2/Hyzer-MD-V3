@@ -546,55 +546,27 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
     
 //━━━━━━━━[ SETTINGS MENU ]━━━━━━━━//
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    let message = await prepareWAMessageMedia({ image: fs.readFileSync('./d11e20d44501e1a59439b5344e07f5d7.jpg')}, { upload: conn.waUploadToServer })
-     const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-     templateMessage: {
-         hydratedTemplate: {
-           imageMessage: message.imageMessage,
-           hydratedContentText: text.trim(),
-           hydratedFooterText: wm,
-           hydratedButtons: [{           	           	
-            urlButton: {
-               displayText: 'Website Creator',
-               url: 'https://fachriweb.vercel.app',
-             }
+    await conn.sendMessage(m.chat, { "contentText": 'ʚ──── [ *DASHBOARD* ] ────ɞ', "footerText": text,
+"buttons": [
+{buttonId: '.owner', buttonText: {displayText: 'OWNER🐾'}, type: 1},
+{buttonId: '.donasi', buttonText: {displayText: 'DONASI💰'}, type: 1},
+{buttonId: '.rules', buttonText: {displayText: 'RULES✨'}, type: 1}
+],
+"headerType": "DOCUMENT", "documentMessage": {
+            "url": "https://mmg.whatsapp.net/d/f/AsO5KpESy9E0WI72xEVp65rx505bQxvuIma79L8Ue076.enc",
+            "mimetype": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "title": "ness.docx",
+            "fileSha256": "8Xfe3NQDhjwVjR54tkkShLDGrIFKR9QT5EsthPyxDCI=",
+            "fileLength": "99999999999999",
+            "pageCount": 100,
+            "mediaKey": "XWv4hcnpGY51qEVSO9+e+q6LYqPR3DbtT4iqS9yKhkI=",
+            "fileName": 'Create By Fachri',
+            "fileEncSha256": "NI9ykWUcXKquea4BmH7GgzhMb3pAeqqwE+MTFbH/Wk8=",
+            "directPath": "/v/t62.7118-24/35150115_287008086621545_8250021012380583765_n.enc?ccb=11-4&oh=6f0f730e5224c054969c276a6276a920&oe=61A21F46",
+            "mediaKeyTimestamp": "1634472176",
+            "jpegThumbnail": await (await fetch(`${logopdf()}`)).buffer(),
+  }}, 'buttonsMessage', { quoted: ftroli, contextInfo: { mentionedJid: conn.parseMention(text), forwardingScore: 999, isForwarded: true, externalAdReply: { title: global.wm, body: `${pickRandom(['udah makan belum kak?', 'udh mandi belum kak?', 'Semangat ya kak!', 'Jangan begadang mulu ya!', 'jangan spam ya kak!', 'Jangan lupa donasi yak kak! >.<', 'Jaga kesehatan yaw kak!', 'Jangan lupa makan!', 'Jangan lupa istirahat yak! >.<', 'I Love you kak >.< 💗✨', 'Pr nya udh belum kak?', 'Jangan kebanyakan main hp yk! nanti sakit :‹'])}`, description: `${pickRandom(['udah makan belum kak?', 'udh mandi belum kak?', 'Semangat ya kak!', 'Jangan begadang mulu ya!', 'jangan spam ya kak!', 'Jangan lupa donasi yak kak! >.<', 'Jaga kesehatan yaw kak!', 'Jangan lupa makan!', 'Jangan lupa istirahat yak! >.<', 'I Love you kak >.< 💗✨', 'Pr nya udh belum kak?', 'Jangan kebanyakan main hp yk! nanti sakit :‹'])}`, mediaType: 2, thumbnail: await (await fetch(`${logos()}`)).buffer(), mediaUrl: `https://youtu.be/N60DXUDEhIE`}}})
 
-           },
-             {
-             urlButton: {
-               displayText: 'Group Bot', 
-               url: gc
-             }
-
-           },
-               {
-             quickReplyButton: {
-               displayText: 'Owner',
-               id: '.owner',
-             }
-
-           },
-               {
-             quickReplyButton: {
-               displayText: 'Donasi',
-               id: '.donasi',
-             }
-
-           },
-           {
-             quickReplyButton: {
-               displayText: 'Credits',
-               id: '.tqto',
-             }
-           }]
-         }
-       }
-     }), { userJid: m.sender, quoted: m });
-     //conn.reply(m.chat, text.trim(), m)
-    return await conn.relayMessage(
-         m.chat,
-         template.message,
-         { messageId: template.key.id }
      )
 } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
