@@ -10,7 +10,18 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     let json = JSON.parse(igdl)
     await m.reply(global.wait)
     for (let { downloadUrl, type } of json) {
-      conn.sendFile(m.chat, downloadUrl, 'ig' + (type == 'image' ? '.jpg' : '.mp4'), '*nih*', m)
+    fdoc = {
+   key : {
+   remoteJid: 'status@broadcast',
+   participant : '0@s.whatsapp.net'
+   },
+   message: {
+   documentMessage: {
+   title: wm, 
+                            }
+                          }
+                        }
+      conn.sendFile(m.chat, downloadUrl, 'ig' + (type == 'image' ? '.jpg' : '.mp4'), '*nih kak*', fdoc)
     }
   })
 }
