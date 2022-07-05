@@ -595,6 +595,12 @@ const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fro
          m.chat,
          template.message,
          { messageId: template.key.id }
+}
+} })
+conn.sendFile(m.chat, vn, 'gratata.mp3', null, m, true, {
+type: 'audioMessage', 
+ptt: true 
+})
      )
 } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
