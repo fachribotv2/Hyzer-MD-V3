@@ -1,5 +1,5 @@
 let handler = async (m, { conn, isROwner, text }) => {
-const anu = {
+const fgc = {
 	"key": {
 		"fromMe": false,
 		"participant": "0@s.whatsapp.net",
@@ -24,7 +24,7 @@ const anu = {
     m.reply(`Mengirim Broadcast Ke ${anu.length} Chat, Waktu Selesai ${anu.length * 0.5 } detik`)
     for (let i of anu) {
     await delay(500)
-    conn.send2Button(i, `${pesan}`, wm, 'OWNER', '.owner', 'MENU', '.menu', anu).catch(_ => _)
+    conn.send2Button(i, `${pesan}`, wm, 'OWNER', '.owner', 'MENU', '.menu', fgc).catch(_ => _)
     }
   m.reply(`Sukses Mengirim Broadcast Ke ${anu.length} Group`)
 }
