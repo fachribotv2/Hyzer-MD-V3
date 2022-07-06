@@ -10,11 +10,11 @@ let fkontak = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.cha
   let isLimit = (isPrems || isOwner ? 99 : limit) * 1024 < filesize
   let name = await conn.getName(m.sender)
 let wm = global.wm
-  conn.sendFile(m.chat, thumb, 'thumbnail.jpg', fkontak)
+  conn.sendFile(m.chat, thumb, 'thumbnail.jpg',`
 *Title:* ${title}
 *Filesize:* ${filesizeF}
 *${isLimit ? 'Pakai ': ''}Link:* ${dl_link}
-`.trim(), m)
+`.trim(), fkontak)
   let _thumb = {}
   try { _thumb = { thumbnail: await (await fetch(thumb)).buffer() } }
   catch (e) { }
