@@ -1,5 +1,6 @@
 let fs = require('fs')
 let handler = async (m, { conn, isROwner, text }) => {
+let time = require('moment-timezone').tz('Asia/Jakarta').format('HH:mm:ss')
 const fgc = {
 	"key": {
 		"fromMe": false,
@@ -25,7 +26,7 @@ const fgc = {
     m.reply(`Mengirim Broadcast Ke ${anu.length} Chat, Waktu Selesai ${anu.length * 0.5 } detik`)
     for (let i of anu) {
     await delay(500)
-    conn.sendBut(i, `${pesan}`, wm, 'Owner', '.owner', fgc).catch(_ => _)
+    conn.sendBut(i, `${pesan}`, '_*All Grup Broadcast ${time}*_', 'Owner', '.owner', fgc).catch(_ => _)
     }
   m.reply(`Sukses Mengirim Broadcast Ke ${anu.length} Group`)
 }
