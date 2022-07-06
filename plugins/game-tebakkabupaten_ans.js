@@ -11,7 +11,18 @@ handler.before = async function (m) {
     if (['.tebu', 'Bantuan', ''].includes(m.text)) return !0
     if (m.text.toLowerCase() == json.title.toLowerCase()) {
       global.db.data.users[m.sender].exp += this.tebakkabupaten[id][2]
-      await this.sendBut(m.chat, `*Benar!* +${this.tebakkabupaten[id][2]} XP`, '', 'Tebak Kabupaten', '.tebakkabupaten', m)
+    fdoc = {
+   key : {
+   remoteJid: 'status@broadcast',
+   participant : '0@s.whatsapp.net'
+   },
+   message: {
+   documentMessage: {
+   title: wm, 
+                            }
+                          }
+                        }
+      await this.sendBut(m.chat, `*Benar!* +${this.tebakkabupaten[id][2]} XP`, '', 'Tebak Kabupaten', '.tebakkabupaten', fdoc)
       clearTimeout(this.tebakkabupaten[id][3])
       delete this.tebakkabupaten[id]
     } else if (similarity(m.text.toLowerCase(), json.title.toLowerCase().trim()) >= threshold) m.reply(`*Dikit Lagi!*`)
