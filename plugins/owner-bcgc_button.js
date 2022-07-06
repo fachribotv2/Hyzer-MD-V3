@@ -25,22 +25,14 @@ const fgc = {
     m.reply(`Mengirim Broadcast Ke ${anu.length} Chat, Waktu Selesai ${anu.length * 0.5 } detik`)
     for (let i of anu) {
     await delay(500)
-    conn.send2Button(i, `${pesan}`, wm, 'OWNER', '.owner', 'MENU', '.menu', fgc).catch(_ => _)
+    conn.sendBut(i, `${pesan}`, wm, 'Owner', '.owner', fgc).catch(_ => _)
     }
   m.reply(`Sukses Mengirim Broadcast Ke ${anu.length} Group`)
 }
-handler.help = ['bcgc-v'].map(v => v + ' <teks>')
+handler.help = ['bcgcbotb <teks>']
 handler.tags = ['owner']
-handler.command = /^(bcgcbutton|bcgcb|bcgc-b)$/i
+handler.command = /^(bcgcbotb)$/i
+
 handler.owner = true
-handler.mods = false
-handler.premium = false
-handler.group = false
-handler.private = false
-
-handler.admin = false
-handler.botAdmin = false
-
-handler.fail = null
 
 module.exports = handler
