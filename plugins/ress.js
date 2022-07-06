@@ -14,16 +14,21 @@ if (m.isBaileys) return
     if (m.chat.endsWith('broadcast')) return
 
     // ketika ditag 
-    try {
+ m.ress = async (text, chatId, options) => {
+        const moment = require("moment-timezone");
+        const salam = moment(Date.now()).tz('Asia/Jakarta').locale('id').format('a')
+    	let pp = await conn.profilePictureUrl(m.sender, 'image').catch(_ => 'https://telegra.ph/file/a2ae6cbfa40f6eeea0cf1.jpg')
+        let { data } = await conn.getFile(await(await require('node-fetch')(pp)).buffer())
+        let name = await conn.getName(m.sender)
+        let wm = global.wm
+        let web = global.web
+        try {
         if (m.mentionedJid.includes(this.user.jid) && m.isGroup) {
-            await this.sendMessage(m.chat, { sticker : stc, thumbnail: global.fotonya2, contextInfo:{  externalAdReply: { showAdAttribution: true,
-mediaType:  1,
-mediaUrl: 'https://wa.me/17608914335',
-title: '「 ❔ 」',
-body: wm3,
-sourceUrl: 'http://github.com/Ipulpachri', thumbnail: global.fotonya2,
- //Kalo mau ada pp dari sender/pengirimnya
- //Kalo mau ringan pake global.thumb                                                                                                              
+            await conn.ress(chatId ? chatId : m.chat, text, m, { contextInfo: { mentionedJid: conn.parseMention(text), externalAdReply: { title: `Selamat ${salam} ${name}`, body: wm, sourceUrl: web, thumbnail: data }}, options })   
+    }
+    m.name = m.pushName || conn.getName(m.sender)
+    if (m.msg && m.msg.url) m.download = () => conn.downloadM(m.msg, m.mtype.toLowerCase().replace(/message/i, ''))
+                                                                                                               
                                                                                                                
           //thumbnail: await( await fetch(pp)).buffer()
   }
