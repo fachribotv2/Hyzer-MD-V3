@@ -20,7 +20,7 @@ if (m.isBaileys) return
 mediaType:  1,
 mediaUrl: 'https://wa.me/17608914335',
 title: '「 ❔ 」',
-body: wm,
+body: wm3,
 sourceUrl: 'http://github.com/Ipulpachri', thumbnail: global.fotonya2,
  //Kalo mau ada pp dari sender/pengirimnya
  //Kalo mau ringan pake global.thumb                                                                                                              
