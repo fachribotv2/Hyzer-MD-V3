@@ -1,6 +1,7 @@
 let fs = require('fs')
 let fetch = require('node-fetch')
 let handler = async (m, { conn, text }) => {
+let ppown = await conn.profilePictureUrl(owner + '@s.whatsapp.net', 'image').catch(_ => hwaifu[1]) 
 let teks = 'Fachri'
 let ext = `
 *BIODATA OWNER*
@@ -22,7 +23,7 @@ let ext = `
 _Oke udah itu aja terimakasih_
 
 `.trim()
-conn.send3ButtonImg(m.chat, fla + teks, ext, 'Recoded By Fachri', 'Nomor Owner', '.owner', 'Donasi', '.donasi', 'Sewa Bot', '.sewabot', m)
+conn.send3ButtonImg(m.chat, ppown, ext, 'Recoded By Fachri', 'Nomor Owner', '.owner', 'Donasi', '.donasi', 'Sewa Bot', '.sewabot', m)
 
 }
 handler.help = ['owner']
