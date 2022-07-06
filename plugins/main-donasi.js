@@ -17,36 +17,8 @@ Berapapun donasi kalian akan sangat berarti 👍
 *Contact person Owner:*
 wa.me/${numberowner} (Fachri)
 `
-        conn.sendHButtonLoc = async (m.chat, './media/donasi.jpg, anu, wm, 'Sewa', '.sewabot', 'Owner', '.owner', m) => {
-		let template = generateWAMessageFromContent(jid, proto.Message.fromObject({
-			         templateMessage: {
-             hydratedTemplate: {
-                 hydratedContentText: content,
-                 mentions: conn.parseMention(anu + wm),
-                 locationMessage: { 
-                 jpegThumbnail: './media/donasi.jpg',
-                 hydratedFooterText: wm,
-    mentions: conn.parseMention(anu + wm),
-                 hydratedButtons: [{
-                     urlButton: {
-                         displayText: 'Sewa',
-                         url: '.sewabot',
-                     }
-                 },  {
-                     quickReplyButton: {
-                         displayText: 'Owner',
-                         id: '.owner',
-                     }
-                 }],  mentions: conn.parseMention(anu + wm)
-             }
-         }
-     }), { userJid: conn.user.jid, quoted: quoted,     mentions: conn.parseMention(anu + wm)});
-     return await conn.relayMessage(
-         jid,
-         template.message,
-         { messageId: template.key.id }
-     )
-	}
+  conn.send3ButtonImg(m.chat, './media/donasi.jpg', anu, wm, 'Owner', '.owner', 'Info Owner', '.infoowner', 'Sewa', '.sewabot', m) 
+}
 handler.help = ['donasi', 'donate']
 handler.tags = ['xp', 'info']
 handler.command = /^(donasi|donate)$/i
