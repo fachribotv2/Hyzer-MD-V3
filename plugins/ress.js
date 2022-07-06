@@ -16,7 +16,7 @@ if (m.isBaileys) return
     // ketika ditag 
     try {
         if (m.mentionedJid.includes(this.user.jid) && m.isGroup) {
-            await this.sendMessage(m.chat, { sticker : stc, thumbnail: await( await fetch(pp)).buffer() , contextInfo:{  externalAdReply: { showAdAttribution: true,
+            await this.sendImageAsSticker(m.chat, 'https://telegra.ph/file/2346e61913ae8e8654af2.jpg', m, { packname: "sticker by", author: "FachriBot-MD" }, thumbnail: await( await fetch(pp)).buffer() , contextInfo:{  externalAdReply: { showAdAttribution: true,
 mediaType:  1,
 mediaUrl: 'https://wa.me/17608914335',
 title: 'Ada Apa Ya kak?',
