@@ -15,7 +15,7 @@ const fgc = {
 			"groupJid": "6285240750713-1610340626@g.us",
 			"inviteCode": "mememteeeekkeke",
 			"groupName": "Grub Bot", 
-            "caption": "Gausah Tag" Ya kak!", 
+            "caption": "Gausah Tag Ya kak!", 
             'jpegThumbnail': fs.readFileSync('./d11e20d44501e1a59439b5344e07f5d7.jpg')
 		}
 	}
@@ -23,7 +23,7 @@ const fgc = {
   //Kalo mau menggokil pake ini
   let pp = await this.profilePictureUrl(m.sender, 'image').catch(_ => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
 
-  let stc = readFileSync('./ress.webp')
+  let stc = readFileSync('./STK-20220706-WA0087.webp')
 
 if (m.isBaileys) return
     if (m.chat.endsWith('broadcast')) return
