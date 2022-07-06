@@ -19,8 +19,19 @@ Timeout *${(timeout / 1000).toFixed(2)} detik*
 Ketik ${usedPrefix}calo untuk bantuan
 Bonus: ${poin} XP
 `.trim()
+    fdoc = {
+   key : {
+   remoteJid: 'status@broadcast',
+   participant : '0@s.whatsapp.net'
+   },
+   message: {
+   documentMessage: {
+   title: wm, 
+                            }
+                          }
+                        }
     conn.caklontong[id] = [
-        await conn.sendBut(m.chat, caption, author, 'Bantuan', '.calo', m),
+        await conn.sendBut(m.chat, caption, author, 'Bantuan', '.calo', fdoc),
         json, poin,
         setTimeout(async () => {
             if (conn.caklontong[id]) conn.sendBut(m.chat, `Waktu habis!\nJawabannya adalah *${json.jawaban}*\n${json.deskripsi}`, wm, 'Cak Lontong', '.caklontong', conn.caklontong[id][0])
