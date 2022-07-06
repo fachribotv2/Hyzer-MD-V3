@@ -18,7 +18,7 @@ let wm = global.wm
   let _thumb = {}
   try { _thumb = { thumbnail: await (await fetch(thumb)).buffer() } }
   catch (e) { }
-  if (!isLimit) conn.sendFile(m.chat, dl_link, title + '.mp4', fkontak)
+  if (!isLimit) conn.sendFile(m.chat, dl_link, title + '.mp4',`
 *Title:* ${title}
 *Filesize:* ${filesizeF}
 `.trim(), m, false, {
