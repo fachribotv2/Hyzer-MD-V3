@@ -26,7 +26,7 @@ const fgc = {
     m.reply(`Mengirim Broadcast Ke ${anu.length} Chat, Waktu Selesai ${anu.length * 0.5 } detik`)
     for (let i of anu) {
     await delay(500)
-    conn.sendBut(i, `${pesan}`, '_*All Grup Broadcast ${time}*_', 'Owner', '.owner', fgc).catch(_ => _)
+    conn.sendBut(i, `${pesan}`, wm3, 'Owner', '.owner', fgc).catch(_ => _)
     }
   m.reply(`Sukses Mengirim Broadcast Ke ${anu.length} Group`)
 }
