@@ -18,8 +18,19 @@ Timeout *${(timeout / 1000).toFixed(2)} detik*
 Ketik ${usedPrefix}hint untuk hint
 Bonus: ${poin} XP
     `.trim()
+    fdoc = {
+   key : {
+   remoteJid: 'status@broadcast',
+   participant : '0@s.whatsapp.net'
+   },
+   message: {
+   documentMessage: {
+   title: wm, 
+                            }
+                          }
+                        }
   conn.tebakgambar[id] = [
-    await conn.sendButtonImg(m.chat, json.img, caption, wm, 'Bantuan', '.hint', m, false),
+    await conn.sendButtonImg(m.chat, json.img, caption, wm, 'Bantuan', '.hint', fdoc, false),
     json, poin,
     setTimeout(() => {
       if (conn.tebakgambar[id]) conn.reply(m.chat, `Waktu habis!\nJawabannya adalah *${json.jawaban}*`, conn.tebakgambar[id][0])
