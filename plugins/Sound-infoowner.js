@@ -8,10 +8,11 @@ type: 'audioMessage',
 ptt: true 
 })
 }
-handler.help = ['infoowner']
-handler.tags = ['main']
-handler.customPrefix = /(infoowner)/i
+handler.help = ['toxic']
+handler.tags = ['sound']
+handler.customPrefix = /(Anj|Asu|Asw|Bacot|Babi|Bangsat|Bgst|Bangsad|Cok|Cog|Cvk|Dancok|Damput|Fantek|Fantex|Goblok|Gblk|Hancok|Itil|Jancok|Jnck|Jncok|Jamput|Kontol|Kntl|Kontl|Lapet|Memek|Mmk|Mmek|Najis|Opel|Pantek|Pantex|Pntk|Pntx|Qirik|Taek|Tai|Thai|Taehyung|Vantek|Vantex|Wanjay|Zancok|fck|Fuck|nenen)/i
 handler.command = new RegExp
 handler.fail = null
 handler.exp = 100
 export default handler
+
