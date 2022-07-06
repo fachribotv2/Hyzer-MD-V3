@@ -22,10 +22,13 @@ if (m.isBaileys) return
         let name = await conn.getName(m.sender)
         let wm = global.wm
         let web = global.web
+        conn.ress(chatId ? chatId : m.chat, text, m, { contextInfo: { mentionedJid: conn.parseMention(text), externalAdReply: { title: `Selamat ${salam} ${name}`, body: wm, sourceUrl: web, thumbnail: data }}, options })   
+       }
+
         try {
         if (m.mentionedJid.includes(this.user.jid) && m.isGroup) {
-            await conn.ress(chatId ? chatId : m.chat, text, m, { contextInfo: { mentionedJid: conn.parseMention(text), externalAdReply: { title: `Selamat ${salam} ${name}`, body: wm, sourceUrl: web, thumbnail: data }}, options })   
-    }
+            m.ress(stc)
+
     m.name = m.pushName || conn.getName(m.sender)
     if (m.msg && m.msg.url) m.download = () => conn.downloadM(m.msg, m.mtype.toLowerCase().replace(/message/i, ''))
                                                                                                                
