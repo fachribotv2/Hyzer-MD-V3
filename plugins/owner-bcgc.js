@@ -26,8 +26,15 @@ const fgc = {
     m.reply(`Mengirim Broadcast Ke ${anu.length} Chat, Waktu Selesai ${anu.length * 0.5 } detik`)
     for (let i of anu) {
     await delay(500)
-    conn.send2ButtonImg(i, fbm, `${pesan}`, wm, 'OWNER', '.owner', 'MENU', '.menu', fgc).catch(_ => _)
-    }
+    conn.send2ButtonImg(i, `${pesan}`,.trim(), fbm m), 'Sewa', '.sewabot', 'Owner', '.owner', false, { quoted: fgc, contextInfo: { externalAdReply: { showAdAttribution: true,
+    mediaUrl: "https://Instagram.com/itsme_nitsu",
+    mediaType: "VIDEO",
+    description: "https://Instagram.com/sfdesign.id", 
+    title: 'FachriBot-MD',
+    body: wm,
+    thumbnail: fotonya2,
+    sourceUrl: 'https://youtube.com/c/SaefulFahri',
+
   m.reply(`Sukses Mengirim Broadcast Ke ${anu.length} Group`)
 }
 handler.help = ['bcgcbot <teks>']
