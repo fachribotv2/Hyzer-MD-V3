@@ -29,12 +29,12 @@ wa.me/${numberowner} (Fachri)
     mentions: conn.parseMention(anu + wm),
                  hydratedButtons: [{
                      urlButton: {
-                         displayText:Sewa,
+                         displayText: 'Sewa',
                          url: '.sewabot',
                      }
                  },  {
                      quickReplyButton: {
-                         displayText:Owner,
+                         displayText: 'Owner',
                          id: '.owner',
                      }
                  }],  mentions: conn.parseMention(anu + wm)
