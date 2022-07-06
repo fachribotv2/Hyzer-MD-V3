@@ -15,15 +15,35 @@ let ext = `
 
 *SOSIAL MEDIA*
 
+⬡ *whatsapp* : wa.me/6285713041886
 ⬡ *instagram* : @sfdesign.id
 ⬡ *Facebook* : @Saeful Fachri
 ⬡ *Youtube* : SF Design
 ⬡ *Email* : saefulfachri18@gmail.com
+
+*SKILLS*
+
+> JavaScript [89.7%]
+> Python [13.4%]
+> CSS [5.1%]
+> Html [1.2%]
  
+
 _Oke udah itu aja terimakasih_
 
 `.trim()
-conn.send3ButtonImg(m.chat, ppown, ext, 'Recoded By Fachri', 'Nomor Owner', '.owner', 'Donasi', '.donasi', 'Sewa Bot', '.sewabot', m)
+fdoc = {
+   key : {
+   remoteJid: 'status@broadcast',
+   participant : '0@s.whatsapp.net'
+   },
+   message: {
+   documentMessage: {
+   title: wm, 
+                            }
+                          }
+                        }    
+conn.send3ButtonImg(m.chat, ppown, ext, '© Recoded By Fachri', 'Nomor Owner', '.owner', 'Donasi', '.donasi', 'Sewa Bot', '.sewabot', fdoc)
 
 }
 handler.help = ['owner']
