@@ -4,22 +4,7 @@ import { readFileSync } from "fs"
 
 
 export async function all(m) {
-const fgc = {
-	"key": {
-		"fromMe": false,
-		"participant": "0@s.whatsapp.net",
-		"remoteJid": "0@s.whatsapp.net"
-	},
-	"message": {
-		"groupInviteMessage": {
-			"groupJid": "6285240750713-1610340626@g.us",
-			"inviteCode": "mememteeeekkeke",
-			"groupName": "Grub Bot", 
-            "caption": "Gausah Tag Ya kak!", 
-            'jpegThumbnail': fs.readFileSync('./d11e20d44501e1a59439b5344e07f5d7.jpg')
-		}
-	}
-}
+
   //Kalo mau menggokil pake ini
   let pp = await this.profilePictureUrl(m.sender, 'image').catch(_ => 'https://telegra.ph/file/24fa902ead26340f3df2c.png')
 
@@ -42,7 +27,7 @@ sourceUrl: 'http://github.com/Ipulpachri', thumbnail: await( await fetch(pp)).bu
                                                                                                                
           //thumbnail: await( await fetch(pp)).buffer()
   }
- }}, { quoted: fgc })
+ }}, { quoted: m })
           
         }
     } catch (e) {
