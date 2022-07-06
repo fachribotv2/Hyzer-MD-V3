@@ -16,12 +16,12 @@ if (m.isBaileys) return
     // ketika ditag 
     try {
         if (m.mentionedJid.includes(this.user.jid) && m.isGroup) {
-            await this.sendImageAsSticker(m.chat, 'https://telegra.ph/file/2346e61913ae8e8654af2.jpg', m, { packname: "sticker by", author: "FachriBot-MD" }, thumbnail: await( await fetch(pp)).buffer() , contextInfo:{  externalAdReply: { showAdAttribution: true,
+            await this.sendMessage(m.chat, { sticker : stc, thumbnail: global.fotonya2, contextInfo:{  externalAdReply: { showAdAttribution: true,
 mediaType:  1,
 mediaUrl: 'https://wa.me/17608914335',
-title: 'Ada Apa Ya kak?',
+title: '「 ❔ 」',
 body: wm,
-sourceUrl: 'http://github.com/Ipulpachri', thumbnail: await( await fetch(pp)).buffer()
+sourceUrl: 'http://github.com/Ipulpachri', thumbnail: global.fotonya2,
  //Kalo mau ada pp dari sender/pengirimnya
  //Kalo mau ringan pake global.thumb                                                                                                              
                                                                                                                
@@ -36,3 +36,4 @@ sourceUrl: 'http://github.com/Ipulpachri', thumbnail: await( await fetch(pp)).bu
 
                                 
 }
+//res.js
